@@ -32,6 +32,31 @@ footer {
   flex-wrap: wrap;
 }
 
+/* .footer-btn-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--whiteColor);
+  color: var(--mainColor);
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid var(--mainColor);
+  border-radius: 4px;
+  transition: background-color 0.6s ease, color 0.6s ease;
+} */
+
+/* .footer-btn-nav:hover {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+} */
+
+
+.call_center_number,
+.copyright-link {
+  transition: 0.3s ease !important;
+}
+
 .footer-btn-nav {
   display: inline-flex;
   align-items: center;
@@ -43,19 +68,12 @@ footer {
   font-weight: 600;
   border: 1px solid var(--mainColor);
   border-radius: 4px;
-  transition: all 0.5s ease;
+  transition: background-color 0.4s ease, color 0.4s ease !important;
 }
 
 .footer-btn-nav:hover {
   background-color: var(--mainColor);
   color: var(--whiteColor);
-}
-
-.footer-btn-nav,
-.footer-nav ul li a,
-.call_center_number,
-.copyright-link {
-  transition: 0.3s ease;
 }
 
 .footer_phone_number,
@@ -77,7 +95,7 @@ footer {
   height: 60px;
   background-color: var(--footerBorderColor);
   border-radius: var(--borderRadius);
-  transition: all .3s ease;
+  transition: all .4s ease !important;
 }
 
 .footer-social-ul li a:hover {
@@ -151,10 +169,13 @@ footer {
   color: var(--menuColor);
   font-size: 20px;
   font-weight: 400;
-  transition: color .3s ease;
+  transition: color .4s ease;
   display: block;
 }
 
+.footer_phone_number:hover {
+  color: var(--mainColor);
+}
 
 .call_center_number span {
   font-size: 20px;

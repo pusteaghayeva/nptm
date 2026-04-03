@@ -101,7 +101,6 @@
     order: 2;
 }
 
-/* animasiya yalnız button üstündə */
 .news-section-more-btn:hover,
 .news-section-more-btn:focus-visible {
     width: auto;

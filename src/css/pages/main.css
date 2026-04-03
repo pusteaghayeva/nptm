@@ -13,7 +13,24 @@ body {
   font-family: var(--fontInter);
 }
 
+.accw-menu-btn {
+  bottom: 24px !important;
+  top: auto !important;
+  right: auto !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: rgba(67, 120, 255, 1) !important;
+}
 
+.accw-menu-btn svg {
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  min-width: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  background: 0 0 !important;
+}
 
 ul {
   list-style: none;
@@ -34,10 +51,10 @@ a {
 
 .progress-wrap {
   position: fixed;
-  right: 50px;
-  bottom: 28%;
-  height: 46px;
-  width: 46px;
+  right: 26px;
+  bottom: 31%;
+  height: 50px;
+  width: 50px;
   cursor: pointer;
   display: block;
   border-radius: 50px;
@@ -66,8 +83,8 @@ a {
   color: var(--mainColor);
   left: 0;
   top: 0;
-  height: 46px;
-  width: 46px;
+  height: 50px;
+  width: 50px;
   cursor: pointer;
   display: block;
   z-index: 1;
@@ -705,24 +722,21 @@ body {
   position: relative;
   align-self: flex-start;
   white-space: nowrap;
-  transition: width 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width 0.55s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
-/* soldan saga dolan layer */
 .news-btn::before {
   content: "";
   position: absolute;
-  inset: 0;
+  /* inset: 0; */
   background: rgba(255, 255, 255, 0.1);
-  /* və ya bir az tünd rəng */
-
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1) !important;
   z-index: 1;
 }
 
-.news-btn-text {
+.news-btn-main-text {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -754,7 +768,7 @@ body {
   transform: scaleX(1);
 }
 
-.news-btn:hover .news-btn-text {
+.news-btn:hover .news-btn-main-text {
   opacity: 1;
 }
 
@@ -769,11 +783,15 @@ body {
 
 .all-news-link {
   font-size: 18px;
-  color: #666;
+  color: var(--callCenterBorder);
   text-decoration: underline;
+  transition: all .4s ease;
 }
 
-/* desktop */
+.all-news-link:hover {
+  color: var(--mainColor);
+}
+
 @media (min-width: 1200px) {
   .news-slider-wrap {
     width: 100vw;
@@ -781,7 +799,6 @@ body {
   }
 }
 
-/* tablet */
 @media (max-width: 1199px) {
   .call-center-img {
     width: 120px;
