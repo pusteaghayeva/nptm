@@ -1,0 +1,164 @@
+.gpon-check__top1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 88px;
+}
+
+.gpon-input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--recaptchaBg);
+    border-radius: 5px;
+    background-color: var(--gponFieldBg);
+    padding: 16px 14px 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--callCenterBorder);
+    outline: none;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.gpon-input:focus {
+    border-color: var(--mainColor);
+}
+
+.gpon-desc {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--menuColor);
+}
+
+.gpon-alert {
+    margin: 52px 0 60px;
+    padding: 10px 34px;
+    border-radius: 4px;
+    background: rgba(0, 152, 195, 0.04);
+    font-size: 16px;
+    color: var(--menuColor);
+    font-weight: 400;
+    font-family: var(--fontRoboto);
+    position: relative;
+    text-transform: capitalize;
+}
+
+.gpon-check__divider2 {
+    width: 100%;
+    height: 1px;
+    background: #dfdfdf;
+    margin-bottom: 32px;
+}
+
+.gpon-alert::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'><path d='M10 13.3334V10M10 6.66675H10.0087M18.3337 10C18.3337 14.6025 14.6027 18.3334 10 18.3334C5.39795 18.3334 1.66699 14.6025 1.66699 10C1.66699 5.39771 5.39795 1.66675 10 1.66675C14.6027 1.66675 18.3337 5.39771 18.3337 10Z' stroke='%231F7594' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.gpon-upload-wrap {
+    margin: 28px 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.gpon-upload {
+    width: 100%;
+    max-width: 330px;
+    min-height: 184px;
+    border: 1px dashed rgba(32, 31, 148, 0.5);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.gpon-upload__title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--menuColor);
+}
+
+.gpon-upload__desc {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--callCenterBorder);
+}
+
+.gpon-upload__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background: rgba(0, 152, 195, 0.05);
+    color: rgba(31, 117, 148, 1);
+    font-size: 20px;
+}
+
+.gpon-upload__icon i {
+    transform: rotate(30deg);
+}
+
+.gpon-file-input {
+    display: none;
+}
+
+.gpon-terms-block {
+    margin-bottom: 28px;
+}
+
+.gpon-terms {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--joiningConditions);
+    text-decoration: underline;
+}
+
+.gpon-terms__text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--callCenterBorder);
+}
+
+@media (max-width: 991px) {
+    .gpon-check__top1 {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .gpon-check__form-row {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .gpon-field {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+
+@media (max-width: 576px) {
+    .gpon-field {
+        flex: 1 1 100%;
+    }
+
+    .gpon-upload {
+        max-width: 100%;
+    }
+}

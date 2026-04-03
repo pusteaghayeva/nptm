@@ -1,0 +1,98 @@
+.online-services-row {
+    position: relative;
+}
+
+.online-pay-dropdown {
+    display: none;
+    width: max-content;
+    margin: 0 auto 60px auto;
+    background: #f3f2f7;
+    border-radius: 14px;
+    padding: 12px 14px;
+    transition: all 0.3s ease;
+}
+
+.online-pay-dropdown.active {
+    display: block;
+}
+
+.online-pay-tabs {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.online-pay-tab {
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(118, 118, 118, 1);
+    line-height: 1.2;
+    padding: 0 10px 6px;
+    transition: 0.3s ease;
+}
+
+.online-pay-tab::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #8f8f96;
+    opacity: 0.45;
+    transition: 0.3s ease;
+}
+
+.online-pay-tab.active {
+    color: rgba(48, 48, 48, 1);
+}
+
+.online-pay-tab.active::after {
+    background: #3c3c3c;
+    opacity: 1;
+}
+
+.online-pay-tab:hover {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+.online-pay-tab:hover::after {
+    background: #3c3c3c;
+    opacity: 1;
+}
+
+/* onlayn ödə kartı aktiv olanda */
+.online-pay-card.active-card {
+    transform: scale(1.04);
+    border-color: var(--mainColor);
+}
+
+@media (max-width: 991px) {
+    .online-pay-dropdown {
+        margin-top: 20px;
+        padding: 10px 12px;
+    }
+
+    .online-pay-tabs {
+        gap: 12px;
+    }
+
+    .online-pay-tab {
+        font-size: 16px;
+        padding: 0 8px 5px;
+    }
+}
+
+@media (max-width: 575px) {
+    .online-pay-dropdown {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .online-pay-tabs {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,41 @@
+/* .tariffs_internet_type {
+    margin-bottom: 80px;
+} */
+
+.tariffs-content {
+    margin: 20px 0 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--menuColor);
+}
+
+.advantages-img {
+    width: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.joining_conditions {
+    margin: 80px 0 40px;
+}
+
+.joining_conditions_content {
+    margin: 10px 0;
+}
+
+.joining_conditions_title {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--joiningConditions);
+    font-family: var(--fontInter);
+
+
+}
+
+.joining_conditions_text {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: var(--fontInter);
+    margin: 10px 0;
+}

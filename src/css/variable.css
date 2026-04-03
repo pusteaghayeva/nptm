@@ -1,0 +1,31 @@
+:root {
+  --headerBg: rgba(32, 31, 148, 0.02);
+  --mainColor: rgba(32, 31, 148, 1);
+  --fontInter: "Inter", sans-serif;
+  --fontRoboto: "Roboto", sans-serif;
+  --menuColor: rgba(24, 24, 24, 1);
+  --menuBorder: rgba(199, 199, 204, 1);
+  --callCenterBorder: rgba(76, 76, 76, 1);
+  --dropdownBg: rgba(247, 247, 255, 1);
+  --dropdwonBgActive: rgba(32, 31, 148, 0.03);
+  --dropdownMenuColor: rgba(0, 0, 0, 1);
+  --dropdownBorder: #e3e8ef;
+  --whiteColor: #fff;
+  --carouselBtnActive: rgba(142, 142, 147, 1);
+  --carouselBtn: rgba(209, 209, 214, 1);
+  --servicesTitleColor: rgba(80, 80, 80, 1);
+  --servicesBg1: rgba(199, 250, 255, 0.4);
+  --servicesBg2: rgba(239, 241, 255, 1);
+  --servicesBg3: rgba(213, 171, 121, 0.09);
+  --borderRadius: 8px;
+  --footerBorderColor: rgba(76, 76, 76, 0.3);
+  --titleFlexColor: rgba(37, 38, 42, 1);
+  --newsBorderColor: rgba(242, 242, 247, 1);
+  --carouselIndicatorsBg: rgba(32, 31, 148, 0.1);
+  --gray2: rgba(220, 220, 220, 1);
+  --recaptchaBg: rgba(238, 236, 228, 1);
+  --servicePointsBg: rgba(32, 31, 148, 0.2);
+  --joiningConditions: rgba(0, 136, 255, 1);
+  --gponFieldBg: rgba(255, 255, 255, 1);
+  --formLabelColor: rgba(189, 195, 199, 1);
+}

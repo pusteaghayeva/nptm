@@ -1,0 +1,19 @@
+.gpon-field--small {
+    flex: 0 0 calc(33.333% - 27.5px);
+    max-width: calc(33.333% - 27.5px);
+    margin-top: 28px;
+}
+
+@media (max-width: 991px) {
+    .gpon-field--small {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 576px) {
+    .gpon-field--small {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

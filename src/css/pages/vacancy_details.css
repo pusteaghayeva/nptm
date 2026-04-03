@@ -1,0 +1,49 @@
+.main-content {
+    margin: 123px 0;
+}
+
+.apply-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.vacancy-apply-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mainColor);
+    color: var(--dropdownBg);
+    text-decoration: none;
+    padding: 16px 33.5px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, border 0.3s ease, transform 0.3s ease;
+    gap: 20px;
+}
+
+.vacancy-apply-btn:hover {
+    background-color: var(--dropdownBg);
+    color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+
+.vacancy-apply-btn i {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.vacancy-apply-btn:hover i {
+    transform: translateX(5px);
+}
+
+@media(max-width: 768px) {
+    .main-content {
+        margin: 20px 0 60px;
+    }
+    .apply-btn-container{
+        justify-content: center;
+    }
+}

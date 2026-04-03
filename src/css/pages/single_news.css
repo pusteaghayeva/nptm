@@ -1,0 +1,128 @@
+.single-news-section {
+    margin-bottom: 80px;
+}
+
+.single-news-section .carousel-control-next,
+.single-news-section .carousel-control-prev {
+    display: none;
+}
+
+.single-news {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.single-news-title-row {
+    padding: 0;
+    margin: 40px 0;
+}
+
+.single-left-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--governmentBg);
+    margin: 0 0 6px;
+    font-family: var(--fontRoboto);
+}
+
+.single-news-date {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--callCenterBorder);
+    text-align: center;
+    margin: 12px 0;
+}
+
+.single-news-main-title-blog {
+    margin: 80px 0 16px;
+}
+
+.single-news-right-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--titleFlexColor);
+    text-align: center;
+}
+
+.single-news-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.single-news-carousel {
+    margin: 40px 0 60px;
+}
+
+.single-news-content {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--actualMenuColor);
+}
+
+.single-news-carousel .carousel-inner {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.carousel-indicators--numbers {
+    position: static;
+    margin: 40px 0 0;
+    gap: 12px;
+    justify-content: center;
+}
+
+.carousel-indicators--numbers [data-bs-target] {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 0;
+    text-indent: 0;
+    opacity: 1;
+    background: var(--carouselIndicatorsBg);
+    color: rgba(87, 87, 87, 1);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.carousel-indicators--numbers .active {
+    background: var(--mainColor);
+    color: var(--whiteColor);
+}
+
+@media (max-width: 768px) {
+    .single-news {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .single-news-main-title-blog {
+
+        margin: 0;
+    }
+
+    .single-news-right-title {
+        font-size: 20px;
+    }
+
+    .single-news-title-row {
+        margin: 20px 0;
+    }
+
+    .single-left-title {
+        font-weight: 22px;
+    }
+
+    .single-news-left {
+        margin-bottom: 10px;
+    }
+
+    .single-news-carousel {
+        margin: 20px 0;
+    }
+
+    .single-news-slide img {
+        height: auto;
+        min-height: 200px;
+    }
+}

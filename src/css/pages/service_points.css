@@ -1,0 +1,539 @@
+.telecommunications-section {
+    padding: 50px 0;
+}
+
+.service_points_title {
+    margin-bottom: 0;
+}
+
+.telecommunication-button {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    /* height: 72px; */
+    padding: 12px;
+    margin: 22px 0;
+    border-radius: 8px;
+    border-bottom: 1px solid rgba(76, 76, 76, 0.2);
+    backdrop-filter: blur(4px);
+    transition:
+        background .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease;
+    color: var(--callCenterBorder);
+}
+
+.telecommunication-type {
+    /* width: 212px; */
+    font-size: 16px;
+    font-weight: 500;
+    transition:
+        color .3s ease,
+        letter-spacing .3s ease;
+}
+
+.telecommunication-button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+        transform .3s ease,
+        opacity .3s ease,
+        background .3s ease;
+}
+
+.telecommunication-button:hover span:first-child {
+    transform: scale(1.1);
+}
+
+.telecommunication-button:hover .telecommunication-type {
+    color: var(--goverwnmentBg);
+    letter-spacing: 0.3px;
+}
+
+.telecommunication-button:hover span:last-child {
+    transform: translateX(8px);
+    opacity: 1;
+}
+
+.telecommunication-button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg,
+            rgba(32, 31, 148, 1),
+            rgb(65, 91, 152));
+    transition: width .4s ease;
+}
+
+.telecommunication-button:hover::after {
+    width: 100%;
+}
+
+.telecommunication-button.active {
+    /* background-color: var(--mainColor); */
+    color: var(--mainColor);
+    border-bottom: 1px solid var(--mainColor);
+
+}
+
+.telecommunication-content {
+    margin: 20px 0;
+}
+
+.tariffs-img {
+    width: 24px;
+    height: 24px;
+}
+
+.telecommunication-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.telecommunication-content-box {
+    margin-top: 20px;
+    min-height: 560px;
+}
+
+
+.service-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.service-table,
+.tariffs .tariffs-editor-content table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+
+.service-table thead th,
+.tariffs .tariffs-editor-content table thead th {
+    background: var(--servicePointsBg);
+    color: var(--callCenterBorder);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.service-table tbody td,
+.tariffs .tariffs-editor-content table tbody td {
+    background: rgba(32, 31, 148, 0.04);
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--menuColor);
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
+.service-table tbody tr:hover td,
+.tariffs .tariffs-editor-content table tbody tr:hover td {
+    background: #e9e9f4;
+    transition: 0.3s ease;
+}
+
+/* .service-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+
+.service-table thead th {
+    background: var(--servicePointsBg);
+    color: var(--callCenterBorder);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.service-table tbody td {
+    background: rgba(32, 31, 148, 0.04);
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--menuColor);
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
+.service-table tbody tr:hover td {
+    background: #e9e9f4;
+    transition: 0.3s ease;
+} */
+
+.service-text-block {
+    background: #f1f1f6;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.tarifss-advantages-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.advantages-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--menuColor);
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 991px) {
+    .telecommunication-content-box {
+        margin-top: 30px;
+        min-height: auto;
+    }
+
+    .service-table thead th,
+    .service-table tbody td {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .tarifss-advantages-card {
+        margin: 10px auto
+    }
+
+    .tariffs-content {
+        margin: 20px 0;
+    }
+
+    .joining_conditions {
+        margin: 40px 0;
+    }
+}
+
+
+
+.services-tariffs-section {
+    width: 60%;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.services-tariffs-section .row {
+    margin: 80px 0 60px;
+}
+
+.services-tariffs-col {
+    position: relative;
+}
+
+.services-tariffs-col img {
+    width: 40px;
+    /* height: 40px; */
+}
+
+.services-tariffs-name {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--menuColor);
+    text-align: center;
+    margin: 20px auto;
+}
+
+.services-tariffs-col {
+    width: 100%;
+    height: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+    border: 1px solid var(--mainColor);
+    margin: 0 auto;
+}
+
+.services-tariffs-col:hover {
+    transform: scale(1.04);
+
+}
+
+.services-tariffs-abs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.tarrifs .tariff-tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+
+.tariffs .tariffs .tariff-buttons li {
+    margin: 0;
+    padding: 0;
+}
+
+/* editor */
+
+/* .tariffs .tariffs-editor-content {
+    color: var(--menuColor);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.tariffs .tariffs-editor-content h1,
+.tariffs .tariffs-editor-content h2,
+.tariffs .tariffs-editor-content h3,
+.tariffs .tariffs-editor-content h4,
+.tariffs .tariffs-editor-content h5,
+.tariffs .tariffs-editor-content h6 {
+    color: var(--callCenterBorder);
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.tariffs .tariffs-editor-content p {
+    margin-bottom: 16px;
+}
+
+.tariffs .tariffs-editor-content ul,
+.tariffs .tariffs-editor-content ol {
+    margin-bottom: 16px;
+    padding-left: 20px;
+}
+
+.tariffs .tariffs-editor-content a {
+    color: var(--mainColor);
+    text-decoration: underline;
+}
+
+.tariffs .tariffs-editor-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tariffs .tariffs-editor-content table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 4px;
+    margin: 20px 0;
+}
+
+.tariffs .tariffs-editor-content table thead th {
+    background: var(--servicePointsBg);
+    color: var(--callCenterBorder);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.tariffs .tariffs-editor-content table tbody td {
+    background: rgba(32, 31, 148, 0.04);
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--menuColor);
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
+.tariffs .tariffs-editor-content table tbody tr:hover td {
+    background: #e9e9f4;
+    transition: 0.3s ease;
+}
+
+.tariffs .tariffs-editor-content table,
+.tariffs .tariffs-editor-content .table-wrapper {
+    overflow-x: auto;
+    display: block;
+} */
+
+.tariffs-scroll {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    gap: 14px;
+    width: 100%;
+}
+
+.table-scroll-area {
+    flex: 1;
+    max-height: 560px;
+    /* background-color: red; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.table-scroll-area::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.fake-scrollbar {
+    width: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+.fake-scrollbar {
+    width: 18px;
+    display: none;
+    /* default gizli */
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+.tariffs-scroll.has-scroll .fake-scrollbar {
+    display: flex;
+}
+
+.scroll-arrow {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    line-height: 1;
+    color: rgba(29, 27, 32, 1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-track {
+    position: relative;
+    width: 6px;
+    flex: 1;
+    margin: 8px 0;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-track::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    border-radius: 999px;
+    background: #efeff4;
+}
+
+.scroll-thumb {
+    position: absolute;
+    top: 0;
+    width: 6px;
+    min-height: 44px;
+    border-radius: 999px;
+    background: #cfcfd6;
+    cursor: pointer;
+}
+
+.service-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+
+
+
+@media(max-width:1200px) {
+    .services-tariffs-col {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+        padding: 20px;
+        min-height: 130px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .telecommunication-button {
+        width: 100%;
+    }
+
+    .telecommunication-type {
+        font-size: 18px;
+    }
+
+    .tariffs-img {
+        font-size: 16px;
+    }
+
+
+}
+
+@media (max-width: 991px) {
+
+    .tariffs .tariffs-editor-content table thead th,
+    .tariffs .tariffs-editor-content table tbody td {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media(max-width: 769px) {
+    .services {
+        padding: 0;
+    }
+
+    .services-tariffs-section {
+        width: 90%;
+    }
+
+    .telecommunications-section {
+        margin: 0;
+        padding: 0;
+    }
+
+    .services-tariffs-section .row {
+        margin: 40px 0;
+    }
+
+    #all-tariffs .tariff-buttons {
+        display: none;
+    }
+
+    .telecommunication-button {
+        width: 100%;
+    }
+
+    .telecommunication-type {
+        font-size: 16px;
+    }
+
+    .tariffs-img {
+        font-size: 14px;
+    }
+}
