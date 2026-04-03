@@ -86,65 +86,6 @@ $('.news-carousel').owlCarousel({
   }
 });
 
-
-// lang
-document.addEventListener("DOMContentLoaded", function () {
-  const flag = document.getElementById("langFlag");
-  const text = document.getElementById("langText");
-  const menu = document.getElementById("langMenu");
-
-  const languages = [
-    { code: "AZ", flag: "./src/img/flag_az.png" },
-    { code: "EN", flag: "./src/img/flag_en.png" },
-    { code: "RU", flag: "./src/img/flag_ru.png" }
-  ];
-
-  let currentLang = localStorage.getItem("lang") || "AZ";
-  let currentFlag = localStorage.getItem("flag") || "./src/img/flag_az.png";
-
-  function renderCurrentLang() {
-    text.textContent = currentLang;
-    flag.src = currentFlag;
-    flag.alt = currentLang;
-  }
-
-  function renderMenu() {
-    menu.innerHTML = "";
-
-    languages
-      .filter(lang => lang.code !== currentLang)
-      .forEach(lang => {
-        const li = document.createElement("li");
-        li.innerHTML = `
-          <a class="dropdown-item lang-item" href="#" data-lang="${lang.code}" data-flag="${lang.flag}">
-            ${lang.code}
-          </a>
-        `;
-        menu.appendChild(li);
-      });
-
-    const items = menu.querySelectorAll(".lang-item");
-
-    items.forEach(item => {
-      item.addEventListener("click", function (e) {
-        e.preventDefault();
-
-        currentLang = this.dataset.lang;
-        currentFlag = this.dataset.flag;
-
-        localStorage.setItem("lang", currentLang);
-        localStorage.setItem("flag", currentFlag);
-
-        renderCurrentLang();
-        renderMenu();
-      });
-    });
-  }
-
-  renderCurrentLang();
-  renderMenu();
-});
-
 // back to top
 (function ($) {
   "use strict";

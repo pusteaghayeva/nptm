@@ -64,7 +64,6 @@
     opacity: 1;
 }
 
-/* onlayn ödə kartı aktiv olanda */
 .online-pay-card.active-card {
     transform: scale(1.04);
     border-color: var(--mainColor);

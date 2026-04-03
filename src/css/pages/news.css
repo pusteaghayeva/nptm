@@ -98,7 +98,7 @@
     flex-shrink: 0;
     transform: translateX(0);
     transition: transform .28s cubic-bezier(.4, 0, .2, 1);
-    order: 2;
+    /* order: 2; */
 }
 
 .news-section-more-btn:hover,
@@ -166,7 +166,6 @@
 
     .news-section-more-btn:hover,
     .news-section-more-btn:focus-visible {
-        /* width: clamp(120px, 100%, 260px); */
         width: 100%;
     }
 }

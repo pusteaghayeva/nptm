@@ -13,7 +13,6 @@
     align-items: center;
     justify-content: space-between;
     width: 200px;
-    /* height: 72px; */
     padding: 12px;
     margin: 22px 0;
     border-radius: 8px;
@@ -27,7 +26,6 @@
 }
 
 .telecommunication-type {
-    /* width: 212px; */
     font-size: 16px;
     font-weight: 500;
     transition:
@@ -77,10 +75,8 @@
 }
 
 .telecommunication-button.active {
-    /* background-color: var(--mainColor); */
     color: var(--mainColor);
     border-bottom: 1px solid var(--mainColor);
-
 }
 
 .telecommunication-content {
@@ -143,37 +139,6 @@
     transition: 0.3s ease;
 }
 
-/* .service-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 4px;
-}
-
-.service-table thead th {
-    background: var(--servicePointsBg);
-    color: var(--callCenterBorder);
-    font-size: 16px;
-    font-weight: 600;
-    padding: 12px 20px;
-    text-align: left;
-    border-radius: 4px;
-}
-
-.service-table tbody td {
-    background: rgba(32, 31, 148, 0.04);
-    padding: 12px;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--menuColor);
-    border-radius: 6px;
-    vertical-align: middle;
-}
-
-.service-table tbody tr:hover td {
-    background: #e9e9f4;
-    transition: 0.3s ease;
-} */
-
 .service-text-block {
     background: #f1f1f6;
     border-radius: 8px;
@@ -225,7 +190,6 @@
 .services-tariffs-section {
     width: 60%;
     margin: 0 auto;
-    /* background-color: red; */
 }
 
 .services-tariffs-section .row {
@@ -290,85 +254,6 @@
     padding: 0;
 }
 
-/* editor */
-
-/* .tariffs .tariffs-editor-content {
-    color: var(--menuColor);
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-.tariffs .tariffs-editor-content h1,
-.tariffs .tariffs-editor-content h2,
-.tariffs .tariffs-editor-content h3,
-.tariffs .tariffs-editor-content h4,
-.tariffs .tariffs-editor-content h5,
-.tariffs .tariffs-editor-content h6 {
-    color: var(--callCenterBorder);
-    font-weight: 600;
-    margin-top: 24px;
-    margin-bottom: 16px;
-}
-
-.tariffs .tariffs-editor-content p {
-    margin-bottom: 16px;
-}
-
-.tariffs .tariffs-editor-content ul,
-.tariffs .tariffs-editor-content ol {
-    margin-bottom: 16px;
-    padding-left: 20px;
-}
-
-.tariffs .tariffs-editor-content a {
-    color: var(--mainColor);
-    text-decoration: underline;
-}
-
-.tariffs .tariffs-editor-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.tariffs .tariffs-editor-content table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 4px;
-    margin: 20px 0;
-}
-
-.tariffs .tariffs-editor-content table thead th {
-    background: var(--servicePointsBg);
-    color: var(--callCenterBorder);
-    font-size: 16px;
-    font-weight: 600;
-    padding: 12px 20px;
-    text-align: left;
-    border-radius: 4px;
-}
-
-.tariffs .tariffs-editor-content table tbody td {
-    background: rgba(32, 31, 148, 0.04);
-    padding: 12px;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--menuColor);
-    border-radius: 6px;
-    vertical-align: middle;
-}
-
-.tariffs .tariffs-editor-content table tbody tr:hover td {
-    background: #e9e9f4;
-    transition: 0.3s ease;
-}
-
-.tariffs .tariffs-editor-content table,
-.tariffs .tariffs-editor-content .table-wrapper {
-    overflow-x: auto;
-    display: block;
-} */
-
 .tariffs-scroll {
     position: relative;
     display: flex;
@@ -380,7 +265,6 @@
 .table-scroll-area {
     flex: 1;
     max-height: 560px;
-    /* background-color: red; */
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: none;
@@ -404,7 +288,6 @@
 .fake-scrollbar {
     width: 18px;
     display: none;
-    /* default gizli */
     flex-direction: column;
     align-items: center;
     user-select: none;
