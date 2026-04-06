@@ -1,0 +1,25 @@
+.laws-main-title {
+    font-size: 26px;
+    font-weight: 500;
+
+}
+
+.laws-flex {
+    margin: 30px 0;
+}
+
+.laws-title {
+    display: block;
+    color: var(--mainColor);
+    font-size: 20px;
+    margin: 20px 0;
+    border: 1px solid var(--mainColor);
+    border-radius: 8px;
+    background-color: var(--dropdownBg);
+    padding: 10px;
+    transition: all 0.4s ease-in-out !important;
+}
+
+.laws-title:hover {
+    transform: scale(1.02);
+}
