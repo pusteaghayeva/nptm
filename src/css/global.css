@@ -16,7 +16,7 @@
 @import url("./pages/vacancy.css");
 @import url("./pages/vacancy_details.css");
 @import url("./pages/vacancy_form.css");
-@import url("./pages/vacancy_contact.css");
+/* @import url("./pages/vacancy_contact.css"); */
 @import url("./pages/contact.css");
 @import url("./pages/faq.css");
 @import url("./pages/service_points.css");
@@ -27,6 +27,6 @@
 @import url("./pages/change_tariff_form.css");
 @import url("./pages/telephony.css");
 @import url("./pages/campaigns.css");
-@import url("./pages/support.css");
+/* @import url("./pages/support.css"); */
 @import url("./pages/gpon.css");
 @import url("./pages/gpon_alert.css");

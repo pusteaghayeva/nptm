@@ -294,6 +294,8 @@ header {
   box-shadow: none !important;
 }
 
+
+
 @media (min-width: 992px) {
   .navbar-nav .nav-item.dropdown {
     position: relative;
@@ -372,11 +374,18 @@ header {
   }
 }
 
-@media(max-width:1370px) {
+@media (min-width: 1290.01px) and (max-width: 1400px) {
   .logo-name {
-    font-size: 16px;
-    max-width: 240px;
-    white-space: normal;
+    font-size: 15px;
+    margin-left: 5px;
+  }
+
+  .header-right-zone {
+    gap: 0;
+  }
+
+  .call-center {
+    padding: 0 7px;
   }
 }
 
