@@ -9,6 +9,11 @@
     color: var(--titleFlexColor);
 }
 
+
+/* .gpon-upload.vacancy-form-upload {
+    border: none;
+} */
+
 .vacancy_form_text {
     font-size: 16px;
     font-weight: 400;
@@ -44,8 +49,7 @@
 
 .vacancy_form .form-right {
     width: 48%;
-    border: 1px dashed var(--mainColor);
-    height: 242px;
+    height: 200px;
     border-radius: 8px;
     padding: 20px;
     display: flex;
@@ -204,20 +208,16 @@
     .title-flex {
         margin-bottom: 0;
     }
-
     .section-vacancies {
         padding: 0;
     }
-
     .vacancy_form {
         gap: 20px;
         padding: 24px;
     }
-
     .vacancy_form .form-group-recaptcha {
         padding: 12px;
     }
-
     .vacancy_form .submit-btn {
         width: auto;
         min-width: 128px;
@@ -229,45 +229,36 @@
         flex-direction: column;
         padding: 20px;
     }
-
     .vacancy_form .form-left,
     .vacancy_form .form-right {
         width: 100%;
     }
-
     .vacancy_form .form-right {
         order: -1;
         height: auto;
         min-height: 220px;
     }
-
     .vacancy_form .form-flex {
         flex-direction: column;
         margin: 16px 0 0;
         align-items: stretch;
     }
-
     .vacancy_form .form-group-recaptcha {
         margin-bottom: 0;
         width: 100%;
     }
-
     .vacancy_form .form-group label {
         font-size: 11px;
     }
-
     .vacancy_form .form-group-recaptcha label {
         font-size: 14px;
     }
-
     .vacancy_form .submit-btn {
         width: 100%;
     }
-
     .vacancy_form small {
         font-size: 14px;
     }
-
     .vacancy_form .cv .cv-text {
         font-size: 18px;
     }
