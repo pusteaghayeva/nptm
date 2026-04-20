@@ -503,15 +503,20 @@ header {
         padding: 0 20px;
         background-color: var(--dropdownBg);
     }
-    .navbar-nav .nav-link.active {
-        border-left: none;
-        border-right: none;
-    }
+
     .navbar-nav .nav-item {
         border-bottom: 1px solid var(--dropdownBg);
     }
     .navbar-nav .nav-item:last-child {
         border-bottom: none;
+    }
+
+    .navbar-nav .nav-link.active::before{
+        width: 0;
+    }
+
+    .navbar-nav .nav-link.active::after{
+        width: 0;
     }
     .navbar-nav .nav-link {
         width: 100%;

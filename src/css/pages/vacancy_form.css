@@ -231,6 +231,7 @@
 @media (max-width: 992px) {
     .title-flex {
         margin-bottom: 0;
+        flex-wrap: wrap;
     }
     .section-vacancies {
         padding: 0;

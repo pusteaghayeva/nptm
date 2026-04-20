@@ -327,19 +327,17 @@ body {
 .services-bg:hover .services-more::after {
   transform: translateX(4px);
 }
-
-.services .col:nth-child(3n + 1) .services-bg {
+.services .row > div:nth-child(3n+1) .services-bg {
   background-color: var(--servicesBg1);
 }
 
-.services .col:nth-child(3n + 2) .services-bg {
+.services .row > div:nth-child(3n+2) .services-bg {
   background-color: var(--servicesBg2);
 }
 
-.services .col:nth-child(3n + 3) .services-bg {
+.services .row > div:nth-child(3n+3) .services-bg {
   background-color: var(--servicesBg3);
 }
-
 .tariffs {
   margin: 20px 0;
 }
@@ -842,6 +840,7 @@ body {
 
   .main-title {
     margin-bottom: 10px;
+    font-size: 26px;
   }
   .services-bg {
     height: auto;
@@ -864,7 +863,9 @@ body {
   .call-center-img {
     width: 100px;
   }
-
+  .tariff-tabs .nav-link.active {
+    font-size: 17px;
+  }
   .news-section {
     margin: 56px 0;
   }
@@ -929,6 +930,7 @@ body {
   }
   .optica {
     width: 90%;
+    margin: 40px auto;
   }
   .first-section {
     margin-bottom: 20px;
@@ -936,5 +938,4 @@ body {
   .services {
     margin: 30px 0;
   }
-
 }

@@ -79,6 +79,9 @@
     .vacancies {
         margin: 15px 0;
     }
+    .vacancy-col{
+        margin: 10px auto;
+    }
 
     .vacancy-flex {
         flex-direction: column;
