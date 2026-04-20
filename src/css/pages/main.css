@@ -74,8 +74,8 @@ a {
 
 .progress-wrap::after {
   position: absolute;
-  font-family: 'unicons';
-  content: '\e84b';
+  font-family: "unicons";
+  content: "\e84b";
   text-align: center;
   line-height: 46px;
   font-size: 24px;
@@ -93,8 +93,8 @@ a {
 
 .progress-wrap::before {
   position: absolute;
-  font-family: 'unicons';
-  content: '';
+  font-family: "unicons";
+  content: "";
   text-align: center;
   line-height: 46px;
   font-size: 24px;
@@ -147,7 +147,6 @@ body.light .progress-wrap svg.progress-circle path {
   max-width: 271px;
   height: 246px;
   opacity: 1;
-
 }
 
 .call-center-fixed {
@@ -179,7 +178,6 @@ body.light .progress-wrap svg.progress-circle path {
   display: block;
 }
 
-
 a {
   text-decoration: none;
 }
@@ -206,7 +204,6 @@ body {
   width: 60px;
   height: 4px;
 }
-
 
 .first-section .carousel-control-next,
 .first-section .carousel-control-prev {
@@ -268,7 +265,9 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .services-col-title {
@@ -301,7 +300,9 @@ body {
   display: inline-flex;
   align-items: center;
   margin: 35px 32px 0;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .services-bg:hover {
@@ -327,18 +328,17 @@ body {
   transform: translateX(4px);
 }
 
-.services .col:nth-child(3n+1) .services-bg {
+.services .col:nth-child(3n + 1) .services-bg {
   background-color: var(--servicesBg1);
 }
 
-.services .col:nth-child(3n+2) .services-bg {
+.services .col:nth-child(3n + 2) .services-bg {
   background-color: var(--servicesBg2);
 }
 
-.services .col:nth-child(3n+3) .services-bg {
+.services .col:nth-child(3n + 3) .services-bg {
   background-color: var(--servicesBg3);
 }
-
 
 .tariffs {
   margin: 20px 0;
@@ -373,7 +373,6 @@ body {
   justify-content: center;
   gap: 40px;
   margin: 100px 0;
-
 }
 
 .tariff-buttons button {
@@ -419,7 +418,9 @@ body {
   border: 1px solid var(--carouselBtn);
   border-radius: 8px;
   background: var(--whitedropdownBgColor);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .basic-blog .item:hover {
@@ -530,7 +531,6 @@ body {
   .basic-blog .owl-stage {
     margin-left: -4px;
   }
-
 }
 
 .optica {
@@ -540,7 +540,6 @@ body {
   margin: 80px auto;
   padding: 20px;
 }
-
 
 .optica-gpon {
   display: flex;
@@ -584,10 +583,10 @@ body {
   cursor: pointer;
 
   transition:
-    background-color .3s ease,
-    color .3s ease,
-    border-color .3s ease,
-    transform .3s ease;
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .optica-btn:hover {
@@ -690,7 +689,6 @@ body {
   margin-bottom: 22px;
 }
 
-
 .news-btn {
   width: 42px;
   height: 42px;
@@ -754,7 +752,6 @@ body {
   opacity: 1;
 }
 
-
 .all-news-wrap {
   width: 1280px;
   max-width: 100%;
@@ -767,7 +764,7 @@ body {
   font-size: 18px;
   color: var(--callCenterBorder);
   text-decoration: underline;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
 .all-news-link:hover {
@@ -792,6 +789,7 @@ body {
 
   .connect-blog {
     justify-content: center;
+    width: 100%;
   }
 
   .connect-btn {
@@ -835,6 +833,30 @@ body {
     width: 100%;
     padding: 0 20px;
     margin-top: 32px;
+  }
+  .first-carousel-img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main-title {
+    margin-bottom: 10px;
+  }
+  .services-bg {
+    height: auto;
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  .services-content {
+    margin: 10px auto;
+  }
+  .services-img {
+    width: 100px;
+    height: 100px;
+  }
+  .optica {
+    width: 65%;
   }
 }
 
@@ -884,7 +906,35 @@ body {
 
   .tariff-tabs {
     width: auto;
+    justify-content: space-between;
   }
-
+  .tariff-tabs .nav-link {
+    font-size: 14px;
+  }
+  .tariff-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 35px 0;
+  }
+  .tariff-buttons button {
+    padding: 10px;
+  }
+  .basic-blog .speedometer-img {
+    height: 50px;
+  }
+  .basic-blog .item {
+    align-items: center;
+    padding: 15px;
+  }
+  .optica {
+    width: 90%;
+  }
+  .first-section {
+    margin-bottom: 20px;
+  }
+  .services {
+    margin: 30px 0;
+  }
 
 }

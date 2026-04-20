@@ -47,44 +47,77 @@ $(document).ready(function () {
     });
   });
 });
-
 $('.news-carousel').owlCarousel({
   loop: true,
   nav: false,
   dots: false,
   smartSpeed: 700,
-  autoplay: false,
-  autoplayHoverPause: true,
-  autoHeight: false,
   mouseDrag: true,
   touchDrag: true,
-  pullDrag: true,
   responsive: {
     0: {
       items: 1,
-      autoWidth: false,
-      margin: 16,
-      stagePadding: 0
+      margin: 16
     },
     768: {
       items: 2,
-      autoWidth: false,
-      margin: 20,
-      stagePadding: 0
+      margin: 20
     },
-        992: {
+    992: {
       items: 3,
-      autoWidth: false,
-      margin: 20,
-      stagePadding: 0
+      margin: 20
     },
     1200: {
-      autoWidth: true,
-      margin: 18,
-      stagePadding: 42
+      items: 4,
+      margin: 20
+    },
+     1800: {
+      items: 5,
+      margin: 20
+    },
+     2200: {
+      items: 6,
+      margin: 20
     }
   }
 });
+// $('.news-carousel').owlCarousel({
+//   loop: true,
+//   nav: false,
+//   dots: false,
+//   smartSpeed: 700,
+//   autoplay: false,
+//   autoplayHoverPause: true,
+//   autoHeight: false,
+//   mouseDrag: true,
+//   touchDrag: true,
+//   pullDrag: true,
+//   responsive: {
+//     0: {
+//       items: 1,
+//       autoWidth: false,
+//       margin: 16,
+//       stagePadding: 0
+//     },
+//     768: {
+//       items: 2,
+//       autoWidth: false,
+//       margin: 20,
+//       stagePadding: 0
+//     },
+//         992: {
+//       items: 3,
+//       autoWidth: false,
+//       margin: 20,
+//       stagePadding: 0
+//     },
+//     1200: {
+//       autoWidth: true,
+//       margin: 18,
+//       stagePadding: 0
+//     }
+//   }
+// });
 
 // back to top
 (function ($) {
