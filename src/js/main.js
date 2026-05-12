@@ -1,3 +1,66 @@
+// ===== SEARCH PANEL =====
+(function () {
+  var toggleBtn = document.getElementById('searchToggleBtn');
+  var panel     = document.getElementById('searchPanel');
+  var overlay   = document.getElementById('searchOverlay');
+  var closeBtn  = document.getElementById('searchPanelClose');
+  var input     = document.getElementById('searchInput');
+  var submitBtn = document.getElementById('searchSubmitBtn');
+
+  if (!toggleBtn || !panel) return;
+
+  function openSearch() {
+    panel.classList.add('open');
+    overlay.classList.add('open');
+    toggleBtn.classList.add('active');
+    setTimeout(function () { if (input) input.focus(); }, 320);
+  }
+
+  function closeSearch() {
+    panel.classList.remove('open');
+    overlay.classList.remove('open');
+    toggleBtn.classList.remove('active');
+  }
+
+  function doSearch() {
+    if (!input) return;
+    var query = input.value.trim();
+    if (query.length > 0) {
+      window.location.href = './search.html?q=' + encodeURIComponent(query);
+    }
+  }
+
+  toggleBtn.addEventListener('click', function () {
+    panel.classList.contains('open') ? closeSearch() : openSearch();
+  });
+
+  if (closeBtn)  closeBtn.addEventListener('click', closeSearch);
+  if (overlay)   overlay.addEventListener('click', closeSearch);
+  if (submitBtn) submitBtn.addEventListener('click', doSearch);
+  if (input) {
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') doSearch();
+    });
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeSearch();
+  });
+})();
+// ===== END SEARCH PANEL =====
+function setHeaderOffset() {
+  var header = document.querySelector('header');
+  var panel  = document.getElementById('searchPanel');
+  if (header) {
+    var h = header.offsetHeight;
+    document.body.style.paddingTop = h + 'px';
+    if (panel) panel.style.top = h + 'px';
+  }
+}
+
+setHeaderOffset();
+window.addEventListener('resize', setHeaderOffset);
+// search end
 function initTariffCarousel($el) {
   if ($el.hasClass("owl-loaded")) return;
 
@@ -68,14 +131,18 @@ $('.news-carousel').owlCarousel({
       margin: 20
     },
     1200: {
+      items: 3,
+      margin: 20
+    },
+    1440: {
       items: 4,
       margin: 20
     },
-     1800: {
+    1800: {
       items: 5,
       margin: 20
     },
-     2200: {
+    2200: {
       items: 6,
       margin: 20
     }
@@ -144,7 +211,7 @@ $('.news-carousel').owlCarousel({
       progressPath.style.strokeDashoffset = pathLength;
       progressPath.getBoundingClientRect();
       progressPath.style.transition =
-      progressPath.style.WebkitTransition = "stroke-dashoffset 10ms linear";
+          progressPath.style.WebkitTransition = "stroke-dashoffset 10ms linear";
       var updateProgress = function () {
         var scroll = $(window).scrollTop();
         var height = $(document).height() - $(window).height();

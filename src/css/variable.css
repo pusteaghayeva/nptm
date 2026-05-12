@@ -28,4 +28,8 @@
   --joiningConditions: rgba(0, 136, 255, 1);
   --gponFieldBg: rgba(255, 255, 255, 1);
   --formLabelColor: rgba(189, 195, 199, 1);
+  --langBorder: #4C4C4C;
+  --privateOficceBg:#22449C;
+  --calculatorBg: #E0E0E01A;
+  --amount: #181818;
 }
