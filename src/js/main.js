@@ -242,3 +242,6 @@ $('.news-carousel').owlCarousel({
   });
 
 })(jQuery);
+
+
+//calculate
