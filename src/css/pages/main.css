@@ -342,11 +342,6 @@ body {
 
 
 /* ===== CALCULATOR ===== */
-.calculator-section {
-    padding: 60px 0;
-}
-
-
 /* calculator */
 .postal_calculator {
     margin: 120px 0 80px;
@@ -354,6 +349,7 @@ body {
 
 .calculator-section {
     background: var(--calculatorBg);
+    padding: 60px 0;
 
 }
 
@@ -491,18 +487,18 @@ body {
     font-weight: 600;
     font-size: 20px;
     text-align: center;
-    margin: 40px 0;
+    margin-top: 40px;
     display: block;
-    transition: all .5s ease-in-out;
+    transition: all .5s ease;
     font-family: var(--fontInter);
     text-transform: uppercase;
-    border: 1px solid var(#22449C);
+    border: 1px solid var(--privateOficceBg);
 }
 
 
 .btn-calculate:hover {
     background: var(--privateOficceBg);
-    transform: scale(1.04);
+    transform: scale(1.2);
     color: var(--whiteColor);
 }
 
@@ -533,17 +529,10 @@ body {
     padding-right: 44px;
 }
 
-.calc-result-box {
-    display: flex;
-    flex-direction: column;
-    border-radius: 4px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0 1px 4px #0c0c0d0d;
-}
+
 
 .calc-result-top {
-    padding: 24px 24px 0;
+    padding: 32px 60px 0;
 }
 
 .calc-result-label {
@@ -609,11 +598,8 @@ body {
     font-size: 12px;
 }
 
-.calc-result-box {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
+
+
 
 .calc-result-img-wrap {
     flex: 1;
@@ -632,6 +618,64 @@ body {
     width: 318px;
     height: auto;
 }
+.calc-result-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--whiteColor);
+        height: 100%;
+
+    box-shadow: 0 1px 4px #0c0c0d0d;
+}
+/* assss */
+.calculator-section .row.align-items-stretch {
+    display: flex;
+}
+
+.calculator-section .col-lg-8 {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-section .col-lg-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+#postcalc-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#postcalc-form .row {
+    flex: 1;
+}
+
+.calc-result-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--whiteColor);
+    box-shadow: 0 1px 4px #0c0c0d0d;
+        background-image: url('/src/img/calc_bg.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain; /* və ya cover */
+}
+
+
+
+.calc-result-img-wrap {
+    flex: 1;
+    overflow: hidden;
+    min-height: 140px;
+}
+
+
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 991.98px) {
