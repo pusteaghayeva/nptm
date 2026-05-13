@@ -406,7 +406,7 @@ body {
 
 .form-group--type .form-control {
     font-size: 16px;
-    padding: 6px;
+    padding: 12px;
 }
 
 .form-group--type .form-control::placeholder {
@@ -498,7 +498,7 @@ body {
 
 .btn-calculate:hover {
     background: var(--privateOficceBg);
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
     color: var(--whiteColor);
 }
 
