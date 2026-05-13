@@ -409,13 +409,21 @@ body {
     padding: 12px;
 }
 
-
-
 .form-group--type .form-control::placeholder {
-    color: red;
+    color: #8080808C;
     opacity: 1;
 }
+.select-wrapper select:focus{
+    border-color: var(--mainColor);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 62, 180, 0.08);
+}
 
+.form-group--type input[type="number"]:focus, .form-group--type input[type="email"]:focus {
+    border-color: var(--mainColor);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 62, 180, 0.08);
+}
 .type {
     position: absolute;
     right: 12px;
@@ -491,16 +499,17 @@ body {
     text-align: center;
     margin-top: 40px;
     display: block;
-    transition: all .5s ease;
     font-family: var(--fontInter);
     text-transform: uppercase;
     border: 1px solid var(--privateOficceBg);
+    
+    /* Transition */
+    transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
-
 .btn-calculate:hover {
-    background: var(--privateOficceBg);
-    /* transform: scale(1.2); */
+    background: red;
+    border-color: red;
     color: var(--whiteColor);
 }
 
