@@ -409,8 +409,10 @@ body {
     padding: 12px;
 }
 
+
+
 .form-group--type .form-control::placeholder {
-    color: #8080808C;
+    color: red;
     opacity: 1;
 }
 
