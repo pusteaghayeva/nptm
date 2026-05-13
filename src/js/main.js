@@ -1,61 +1,35 @@
 // ===== SEARCH PANEL =====
+// ===== SEARCH PANEL =====
 (function () {
   var toggleBtn = document.getElementById('searchToggleBtn');
   var panel     = document.getElementById('searchPanel');
-  var overlay   = document.getElementById('searchOverlay');
   var closeBtn  = document.getElementById('searchPanelClose');
   var input     = document.getElementById('searchInput');
-  var submitBtn = document.getElementById('searchSubmitBtn');
 
   if (!toggleBtn || !panel) return;
 
-  // function openSearch() {
-  //   panel.classList.add('open');
-  //   overlay.classList.add('open');
-  //   toggleBtn.classList.add('active');
-  //   setTimeout(function () { if (input) input.focus(); }, 320);
-  // }
+  function openSearch() {
+    panel.classList.add('open');
+    document.body.classList.add('search-open');
+    setTimeout(function () { if (input) input.focus(); }, 320);
+  }
 
-  // function closeSearch() {
-  //   panel.classList.remove('open');
-  //   overlay.classList.remove('open');
-  //   toggleBtn.classList.remove('active');
-  // }
-function openSearch() {
-  panel.classList.add('open');
-  document.body.classList.add('search-open');  // ← header gizlənir
-  setTimeout(function () { if (input) input.focus(); }, 320);
-}
-
-function closeSearch() {
-  panel.classList.remove('open');
-  document.body.classList.remove('search-open');  // ← header geri gəlir
-}
-  function doSearch() {
-    if (!input) return;
-    var query = input.value.trim();
-    if (query.length > 0) {
-      window.location.href = './search.html?q=' + encodeURIComponent(query);
-    }
+  function closeSearch() {
+    panel.classList.remove('open');
+    document.body.classList.remove('search-open');
   }
 
   toggleBtn.addEventListener('click', function () {
     panel.classList.contains('open') ? closeSearch() : openSearch();
   });
 
-  if (closeBtn)  closeBtn.addEventListener('click', closeSearch);
-  if (overlay)   overlay.addEventListener('click', closeSearch);
-  if (submitBtn) submitBtn.addEventListener('click', doSearch);
-  if (input) {
-    input.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter') doSearch();
-    });
-  }
+  if (closeBtn) closeBtn.addEventListener('click', closeSearch);
 
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') closeSearch();
   });
 })();
+// ===== END SEARCH PANEL =====
 // ===== END SEARCH PANEL =====
 function setHeaderOffset() {
   var header = document.querySelector('header');

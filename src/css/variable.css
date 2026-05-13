@@ -28,11 +28,13 @@
   --joiningConditions: rgba(0, 136, 255, 1);
   --gponFieldBg: rgba(255, 255, 255, 1);
   --formLabelColor: rgba(189, 195, 199, 1);
-  --langBorder: #4C4C4C;
-  --privateOficceBg:#22449C;
-  --calculatorBg: #E0E0E01A;
+  --langBorder: #4c4c4c;
+  --privateOficceBg: #22449c;
+  --calculatorBg: #e0e0e01a;
   --amount: #181818;
   --headerBgSearch: #fbfbfd;
-  --searchLink: #25262A;
-  --mapBg: #4B6D9D;
+  --searchLink: #25262a;
+  --mapBg: #4b6d9d;
+  --mapBgPath: #829ecb;
+  --mapStroke: #BDD5F5;
 }

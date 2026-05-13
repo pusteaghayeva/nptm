@@ -510,8 +510,7 @@ body {
 }
 
 .btn-calculate:hover {
-  background: red;
-  border-color: red;
+  background: var(--mainColor);
   color: var(--whiteColor);
 }
 
@@ -683,11 +682,10 @@ body {
 
 /* map */
 .select-map path {
-  fill: var(--mapBg);
-  stroke: var(--whiteColor);
-  stroke-width: 1;
+  fill: var(--mapBgPath);
+  stroke: var(--mapStroke);
+  stroke-width: 0.7;
 }
-
 
 .map-button {
   font-size: 12px !important;
@@ -742,8 +740,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: var(--whiteColor);
-        font-family: var(--fontRoboto);
-
+  font-family: var(--fontRoboto);
 }
 .services__tab__content .city-modal-text span {
   font-weight: 700;
@@ -802,7 +799,7 @@ body {
 }
 
 .contact-map .select-map svg path:hover {
-  fill: var(--privateOficceBg);
+  fill: var(--mapBg);
 }
 
 .contact-map .select-map svg path:focus {
@@ -811,9 +808,8 @@ body {
 
 .city-modal {
   width: 236px;
-  /* width: max-content; */
   background-color: var(--mapBg);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 10px 4px 0px #00000014;
   border-radius: 4px;
   position: absolute;
   left: 0;
@@ -825,16 +821,12 @@ body {
   z-index: 91 !important;
 }
 
-.city-modal h2 {
+.city-modal .map-main-title {
   font-size: 20px;
   font-weight: 500;
   font-family: var(--fontRoboto);
+  color: var(--whiteColor);
 }
-
-/* .city-modal-text {
-  color: #001d3e !important;
-  font-size: 14px !important;
-} */
 
 .city-modal .map-phone-icon {
   width: 36px;
@@ -903,7 +895,7 @@ body {
 }
 
 .map-nakh {
-  transform: scale(1.9) translate(40%, -40%);
+  transform: scale(2.5) translate(40%, -34%);
 }
 
 .back-map {
@@ -1128,7 +1120,7 @@ body {
   border-radius: 20px;
   /* width: 45%; */
   margin: 80px auto;
-  padding: 20px;
+  padding: 20px 20px 0;
 }
 
 .optica-gpon {
@@ -1141,7 +1133,6 @@ body {
 .optica-gpon-img {
   width: 80px;
   height: 80px;
-  margin: 0 auto;
 }
 
 .check {
@@ -1159,7 +1150,7 @@ body {
 
 .optica-btn {
   width: max-content;
-  padding: 12px 26.5px;
+  padding: 12px;
   background-color: var(--mainColor);
   border-radius: 4px;
   margin: 40px auto 0;
@@ -1167,23 +1158,41 @@ body {
   display: block;
   color: var(--dropdownBg);
   font-size: 20px;
-  border: 1px solid transparent;
+  font-weight: 500;
+  /* border: 1px solid transparent; */
   text-decoration: none;
-  line-height: 1.2;
-  cursor: pointer;
-
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
     border-color 0.3s ease,
+    box-shadow 0.3s ease,
     transform 0.3s ease;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-.optica-btn:hover {
-  border-color: var(--mainColor);
-  color: var(--mainColor);
-  background-color: var(--dropdownBg);
-  transform: scale(1.02);
+.optica-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.6s ease,
+    height 0.6s ease,
+    opacity 0.6s ease;
+  opacity: 1;
+}
+
+.optica-btn:hover::after {
+  width: 400px;
+  height: 400px;
+  opacity: 0;
 }
 
 .news-section {
