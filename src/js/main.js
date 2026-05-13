@@ -9,19 +9,28 @@
 
   if (!toggleBtn || !panel) return;
 
-  function openSearch() {
-    panel.classList.add('open');
-    overlay.classList.add('open');
-    toggleBtn.classList.add('active');
-    setTimeout(function () { if (input) input.focus(); }, 320);
-  }
+  // function openSearch() {
+  //   panel.classList.add('open');
+  //   overlay.classList.add('open');
+  //   toggleBtn.classList.add('active');
+  //   setTimeout(function () { if (input) input.focus(); }, 320);
+  // }
 
-  function closeSearch() {
-    panel.classList.remove('open');
-    overlay.classList.remove('open');
-    toggleBtn.classList.remove('active');
-  }
+  // function closeSearch() {
+  //   panel.classList.remove('open');
+  //   overlay.classList.remove('open');
+  //   toggleBtn.classList.remove('active');
+  // }
+function openSearch() {
+  panel.classList.add('open');
+  document.body.classList.add('search-open');  // ← header gizlənir
+  setTimeout(function () { if (input) input.focus(); }, 320);
+}
 
+function closeSearch() {
+  panel.classList.remove('open');
+  document.body.classList.remove('search-open');  // ← header geri gəlir
+}
   function doSearch() {
     if (!input) return;
     var query = input.value.trim();
@@ -54,7 +63,7 @@ function setHeaderOffset() {
   if (header) {
     var h = header.offsetHeight;
     document.body.style.paddingTop = h + 'px';
-    if (panel) panel.style.top = h + 'px';
+    // if (panel) panel.style.top = h + 'px';
   }
 }
 

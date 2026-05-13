@@ -357,28 +357,16 @@
 
     <!-- Search Panel -->
     <div class="search-panel" id="searchPanel">
-      <div class="search-panel-inner">
-        <div class="search-panel-content">
-          <div class="search-input-wrap">
-            <div class="search-input-field-wrap">
-              <i class="fa-solid fa-magnifying-glass search-panel-icon"></i>
-              <input
-                type="text"
-                class="search-panel-input"
-                id="searchInput"
-                placeholder="Axtar..."
-                autocomplete="off"
-              />
-            </div>
-            <button
-              class="search-panel-submit"
-              type="button"
-              id="searchSubmitBtn"
-            >
-              Axtarış
-            </button>
-          </div>
+      <div class="search-panel-header">
+        <div class="search-panel-logo-flex">
+          <img src="./src/img/logo_nptm.png" alt="logo" class="search-logo" />
+          <img
+            src="./src/img/logo_name_az.svg"
+            alt=""
+            class="search-logo-name logo_name"
+          />
         </div>
+
         <button
           class="search-panel-close"
           id="searchPanelClose"
@@ -388,207 +376,47 @@
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
+
+      <div class="search-panel-body">
+        <div class="search-input-row">
+          <input
+            type="text"
+            class="search-panel-input"
+            id="searchInput"
+            placeholder="Axtar..."
+            autocomplete="off"
+          />
+          <button
+            class="search-panel-submit"
+            type="button"
+            id="searchSubmitBtn"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div class="search-quick-links">
+          <span class="search-quick-label">TEZ KEÇİDLƏR</span>
+          <div class="search-quick-tags">
+            <a href="#" class="search-tag">Bağlama izləmə</a>
+            <a href="#" class="search-tag">Nasazlıq bildir</a>
+            <a href="#" class="search-tag">Tariflər</a>
+            <a href="#" class="search-tag">Poçt kalkulyatoru</a>
+            <a href="#" class="search-tag">Ödəniş et</a>
+            <a href="" class="search-tag"
+              >Optik (GPON) internetə qoşulmanın mümkünlüyünü yoxla</a
+            >
+          </div>
+        </div>
+
+        <!-- <div class="search-suggestions">
+          <a href="#" class="search-suggestion-item">
+            Optik (GPON) internetə qoşulmanın mümkünlüyünü yoxla
+          </a>
+        </div> -->
+      </div>
     </div>
     <div class="search-overlay" id="searchOverlay"></div>
-    <!--<header>-->
-    <!--  <div class="container-fluid px-0">-->
-    <!--    <div class="flexs">-->
-    <!--      <div class="header-inner">-->
-    <!--        <a href="./index.html" class="logo-flex">-->
-    <!--          <img src="./src/img/logo.png" alt="logo" class="logo-img">-->
-    <!--          <p class="logo-name">-->
-    <!--            Naxçıvan Poçt və Telekommunikasiya Mərkəzi-->
-    <!--          </p>-->
-    <!--        </a>-->
-
-    <!--        <div class="header-right-zone">-->
-    <!--          <a href="" class="private_office">-->
-    <!--            sexsi kabinet-->
-    <!--          </a>-->
-    <!--          <div class="navbar-div js-sticky">-->
-    <!--            <nav class="navbar navbar-expand-lg">-->
-    <!--              <button class="navbar-toggler btn-navbar-toggler" type="button" data-bs-toggle="collapse"-->
-    <!--                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"-->
-    <!--                      aria-label="Toggle navigation">-->
-    <!--                <span class="navbar-toggler-icon"></span>-->
-    <!--              </button>-->
-
-    <!--              <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
-    <!--                <ul class="navbar-nav">-->
-    <!--                  <li class="nav-item">-->
-    <!--                    <a class="nav-link active" href="./about.html" data-accw-zoom="1">-->
-    <!--                      <img src="./src/img/info.png" class="nav-link-img" alt="nav-link-img">-->
-    <!--                      Haqqımızda-->
-    <!--                    </a>-->
-    <!--                  </li>-->
-
-    <!--                  <li class="nav-item dropdown">-->
-    <!--                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" data-accw-zoom="1">-->
-    <!--                      <img src="./src/img/settings.png" class="nav-link-img" alt="nav-link-img">-->
-    <!--                      Xidmətlər</a>-->
-    <!--                    <ul class="dropdown-menu">-->
-    <!--                      <li><a class="dropdown-item" href="./service_points.html">Xidmət-->
-    <!--                        nöqtələri</a></li>-->
-    <!--                      <li><a class="dropdown-item" href="./tarrifs.html">Tariflər</a>-->
-    <!--                      </li>-->
-    <!--                      <li><a class="dropdown-item" href="./telephony.html">Telefoniya</a>-->
-    <!--                      </li>-->
-    <!--                      <li><a class="dropdown-item" href="./radio_tv.html">İnternet</a></li>-->
-    <!--                      <li><a class="dropdown-item" href="./radio_tv.html">IP TV</a></li>-->
-    <!--                      <li><a class="dropdown-item" href="./radio_tv.html">POÇT</a></li>-->
-    <!--                    </ul>-->
-    <!--                  </li>-->
-
-    <!--                  <li class="nav-item dropdown">-->
-    <!--                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" data-accw-zoom="1">-->
-    <!--                      <img src="./src/img/tarrifs.png" class="nav-link-img" alt="nav-link-img">-->
-    <!--                      Tariflər</a>-->
-    <!--                    <ul class="dropdown-menu">-->
-    <!--                      <li><a class="dropdown-item" href="./news.html">Xəbərlər</a>-->
-    <!--                      </li>-->
-    <!--                      <li><a class="dropdown-item" href="./vacancy.html">Vakansiya</a></li>-->
-    <!--                      <li><a class="dropdown-item" href="./gallery.html">Fotoqalereya</a>-->
-    <!--                      </li>-->
-    <!--                      <li><a class="dropdown-item" href="./video_gallery.html" data-accw-zoom="1">Videoqalereya</a></li>-->
-
-    <!--                    </ul>-->
-    <!--                  </li>-->
-
-    <!--                  &lt;!&ndash;                  <li class="nav-item">&ndash;&gt;-->
-    <!--                  &lt;!&ndash;                    <a class="nav-link active" href="./about.html" data-accw-zoom="1">&ndash;&gt;-->
-    <!--                  &lt;!&ndash;                      <img src="./src/img/info.png" class="nav-link-img" alt="nav-link-img">&ndash;&gt;-->
-    <!--                  &lt;!&ndash;                      Haqqımızda&ndash;&gt;-->
-    <!--                  &lt;!&ndash;                    </a>&ndash;&gt;-->
-    <!--                  &lt;!&ndash;                  </li>&ndash;&gt;-->
-
-    <!--                  <li class="nav-item dropdown">-->
-    <!--                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" data-accw-zoom="1">-->
-    <!--                      <img src="./src/img/post.png" class="nav-link-img" alt="nav-link-img">-->
-    <!--                      Poçt</a>-->
-    <!--                    <ul class="dropdown-menu">-->
-    <!--                      <li><a class="dropdown-item" href="./news.html">Xəbərlər</a>-->
-    <!--                      </li>-->
-    <!--                      <li><a class="dropdown-item" href="./vacancy.html">Vakansiya</a></li>-->
-    <!--                      <li><a class="dropdown-item" href="./gallery.html">Fotoqalereya</a>-->
-    <!--                      </li>-->
-    <!--                      <li><a class="dropdown-item" href="./video_gallery.html" data-accw-zoom="1">Videoqalereya</a></li>-->
-
-    <!--                    </ul>-->
-    <!--                  </li>-->
-
-    <!--                  <li class="nav-item dropdown">-->
-    <!--                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" data-accw-zoom="1">-->
-    <!--                      <img src="./src/img/share.png" class="nav-link-img" alt="nav-link-img">-->
-    <!--                      Media</a>-->
-    <!--                    <ul class="dropdown-menu">-->
-    <!--                      <li><a class="dropdown-item" href="./news.html">Xəbərlər</a>-->
-    <!--                      </li>-->
-    <!--                      <li><a class="dropdown-item" href="./vacancy.html">Vakansiya</a></li>-->
-    <!--                      <li><a class="dropdown-item" href="./gallery.html">Fotoqalereya</a>-->
-    <!--                      </li>-->
-    <!--                      <li><a class="dropdown-item" href="./video_gallery.html" data-accw-zoom="1">Videoqalereya</a></li>-->
-
-    <!--                    </ul>-->
-    <!--                  </li>-->
-
-    <!--                  <li class="nav-item dropdown">-->
-    <!--                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" data-accw-zoom="1">-->
-    <!--                      <img src="./src/img/headphones.png" class="nav-link-img" alt="nav-link-img">-->
-    <!--                      Dəstək</a>-->
-    <!--                    <ul class="dropdown-menu">-->
-    <!--                      <li><a class="dropdown-item" href="./contact.html">Müraciət et</a>-->
-    <!--                      </li>-->
-    <!--                      <li><a class="dropdown-item" href="./faq.html">Tez-tez verilən-->
-    <!--                        suallar</a>-->
-    <!--                      </li>-->
-
-    <!--                    </ul>-->
-    <!--                  </li>-->
-
-    <!--                </ul>-->
-
-    <!--                <div class="mobile-menu-extras d-lg-none">-->
-    <!--                  <div class="mobile-menu-top">-->
-    <!--                    <a href="#" class="mobile-lang-link">AZ</a>-->
-    <!--                    <a href="#" class="mobile-lang-link">EN</a>-->
-    <!--                    <a href="#" class="mobile-lang-link">RU</a>-->
-
-    <!--                    <a href="#" class="mobile-call-link">-->
-    <!--                      <i class="fa-solid fa-phone"></i>-->
-    <!--                      *209-->
-    <!--                    </a>-->
-    <!--                  </div>-->
-
-    <!--                </div>-->
-    <!--            </nav>-->
-
-    <!--          </div>-->
-    <!--          &lt;!&ndash; Search icon &ndash;&gt;-->
-    <!--          <button class="search-toggle-btn" id="searchToggleBtn" type="button" aria-label="Axtarış">-->
-    <!--            <i class="fa-solid fa-magnifying-glass"></i>-->
-    <!--          </button>-->
-
-    <!--          &lt;!&ndash;          <div class="search-overlay" id="searchOverlay"></div>&ndash;&gt;-->
-    <!--          <div class="header-actions d-none d-lg-flex">-->
-
-    <!--            <div class="lang">-->
-    <!--              <div class="dropdown lang-dd">-->
-    <!--                <button class="btn btn-lang" type="button" data-bs-toggle="dropdown" id="langBtn">-->
-    <!--                  <img src="./src/img/flag_az.png" alt="flag" class="flag_img" id="langFlag">-->
-    <!--                  <span id="langText">AZ</span>-->
-    <!--                  <i class="fa-solid fa-angle-down"></i>-->
-    <!--                </button>-->
-
-    <!--                &lt;!&ndash; <ul class="dropdown-menu" id="langMenu"></ul> &ndash;&gt;-->
-    <!--                <ul class="dropdown-menu" id="langMenu">-->
-    <!--                  <li data-accw-zoom="1" style="transition: all; zoom: 1;">-->
-    <!--                    <a class="dropdown-item lang-item" href="#" data-lang="EN" data-flag="./src/img/flag_en.png"-->
-    <!--                       data-accw-zoom="1" style="transition: all; zoom: 1;">-->
-    <!--                      EN-->
-    <!--                    </a>-->
-    <!--                  </li>-->
-    <!--                  <li data-accw-zoom="1" style="transition: all; zoom: 1;">-->
-    <!--                    <a class="dropdown-item lang-item" href="#" data-lang="RU" data-flag="./src/img/flag_ru.png"-->
-    <!--                       data-accw-zoom="1" style="transition: all; zoom: 1;">-->
-    <!--                      RU-->
-    <!--                    </a>-->
-    <!--                  </li>-->
-    <!--                </ul>-->
-    <!--              </div>-->
-    <!--            </div>-->
-
-    <!--            <a href="tel:+209" class="call-center">-->
-    <!--              <span class="call-center-icon"><i class="fa-solid fa-phone"></i></span>-->
-    <!--              <span class="call-number">*209</span>-->
-    <!--            </a>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </div>-->
-
-    <!--  </div>-->
-    <!--</header>-->
-    <!--&lt;!&ndash; Search Panel &ndash;&gt;-->
-    <!--<div class="search-panel" id="searchPanel">-->
-    <!--  <div class="search-panel-inner">-->
-    <!--    <div class="search-panel-content">-->
-    <!--      <div class="search-input-wrap">-->
-    <!--        <div class="search-input-field-wrap">-->
-    <!--          <i class="fa-solid fa-magnifying-glass search-panel-icon"></i>-->
-    <!--          <input type="text" class="search-panel-input" id="searchInput"-->
-    <!--                 placeholder="Axtar..." autocomplete="off">-->
-    <!--        </div>-->
-    <!--        <button class="search-panel-submit" type="button" id="searchSubmitBtn">-->
-    <!--          Axtarış-->
-    <!--        </button>-->
-    <!--      </div>-->
-    <!--    </div>-->
-    <!--    <button class="search-panel-close" id="searchPanelClose" type="button" aria-label="Bağla">-->
-    <!--      <i class="fa-solid fa-xmark"></i>-->
-    <!--    </button>-->
-    <!--  </div>-->
-    <!--</div>-->
-    <!--<div class="search-overlay" id="searchOverlay"></div>-->
 
     <a href="" class="call-center-fixed">
       <img
@@ -940,6 +768,2932 @@
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="optica">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="optica-gpon">
+                <img
+                  src="./src/img/location.png"
+                  alt=""
+                  class="optica-gpon-img"
+                />
+                <p class="check">
+                  Optik (GPON) internetə qoşulmanın mümkünlüyünü yoxla
+                </p>
+                <p class="optica-gpon-text">
+                  Ünvanınızı daxil edin və ərazinizdə GPON infrastrukturunun
+                  mövcudluğunu dərhal öyrənin.
+                </p>
+              </div>
+              <a href="./gpon.html" class="optica-btn">Yoxla</a>
+            </div>
+
+            <div class="col-md-6 gov-services-inside__form contact-map">
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="services__tab__content tab-pane fade active show"
+                  id="tab-1"
+                  role="tabpanel"
+                  aria-labelledby="tab-1"
+                >
+                  <div class="select-map">
+                    <svg
+                      style="margin-top: 0"
+                      class="map-nakh"
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 820 820"
+                      xml:space="preserve"
+                    >
+                      <path
+                        title="ŞƏRUR RPŞ"
+                        data-id="67"
+                        data-pid="0"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        class="blue-tooltip"
+                        d="M59.2165 589.458L56.0535 599.546L53.4035 610.659L48.6163 618.438L42.2049 623.14L36.9903 619.549L35.6225 617.327L34.5112 616.985L32.2031 616.899L28.4417 614.164L27.9288 612.881L29.1256 610.573L26.0481 607.838L24.2529 604.076L19.8932 585.868L18.1834 581.765L15.106 579.542L16.1318 578.174L12.7124 578.089L9.6349 577.405L9.0365 577.148L13.0543 569.711L19.0383 563.813L24.7658 562.103L27.9288 558.256V557.145L28.7837 556.632L34.1692 552.443L39.6403 550.562L44.5985 553.127L55.2842 566.89L56.8229 570.053L57.4213 573.558L57.2503 578.003L55.7971 584.842L56.3955 587.578L59.2165 589.458Z"
+                        fill="white"
+                        stroke="#1EBFE3"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        title="KƏNGƏRLİ RPŞ"
+                        data-id="79"
+                        data-pid="0"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        class="blue-tooltip"
+                        d="M73.577 584.241L72.3802 585.438L69.0463 590.653L67.1656 596.295L65.7124 602.193L64.6011 607.237L65.5414 612.281L67.6785 617.239L68.7899 622.453L67.8495 624.334L67.0801 626.557L69.0463 631.002L68.4479 635.191L65.5414 637.157L61.78 638.952L57.9332 640.149L54.6847 639.123L51.4363 637.841L48.7008 631.771L47.5894 629.976L46.2217 629.207L44.7684 627.411L43.5716 625.531L43.0587 624.163L42.2039 623.137L48.6153 618.435L53.4025 610.656L56.0525 599.543L59.2155 589.456L64.6011 588.174L68.7044 584.241L72.6367 582.959L73.577 584.241Z"
+                        fill="white"
+                        stroke="#1EBFE3"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        title="ŞAHBUZ RPŞ"
+                        data-id="71"
+                        data-pid="0"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        class="blue-tooltip"
+                        d="M146.155 628.438L141.709 633.738L138.632 637.585L134.956 636.901L131.708 633.396L127.519 635.704L121.107 638.183L114.867 641.774L112.388 642.201L111.02 639.636L111.362 635.875L108.284 631.943L101.531 628.523L95.0342 625.36L93.4955 621.257L92.2132 617.325L89.0503 616.042L86.8276 614.333L90.3325 608.947L95.0342 605.015L96.573 602.963L98.1117 603.903L99.7359 604.16L101.446 603.818L104.609 602.365L116.32 594.842L120.252 593.218L138.888 588.687L142.308 588.602L146.326 590.14L149.659 592.534L150.942 594.928V598.176L150.514 602.963L151.797 611.597L151.198 614.589L146.24 622.71L145.3 626.472L146.155 628.438Z"
+                        fill="white"
+                        stroke="#1EBFE3"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        title="SƏDƏRƏK RPŞ"
+                        data-id="65"
+                        data-pid="0"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        class="blue-tooltip"
+                        d="M9.03576 577.146L6.98411 575.864L4.93246 572.957L3.30823 565.777L1.85498 563.383L5.95829 561.588L12.7971 560.391L19.1231 560.477L24.0812 559.28L27.9281 557.143V558.254L24.7651 562.101L19.0376 563.81L13.0536 569.709L9.03576 577.146Z"
+                        fill="white"
+                        stroke="#1EBFE3"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        title="ORDUBAD RPŞ"
+                        data-id="66"
+                        data-pid="0"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        class="blue-tooltip"
+                        d="M146.753 707.426L149.489 702.639L145.129 698.194L139.914 694.433L139.572 692.552L140.256 690.757L140.769 687.337L141.624 684.26L147.779 676.481L152.908 665.282L154.276 661.692L155.216 658.016L155.9 654.767L156.84 651.775L159.918 648.527L162.824 645.107L166.244 640.662L174.536 644.765L177.528 647.586L178.468 649.125L178.81 650.493L178.468 651.861L174.023 657.759L173.083 662.546L174.45 667.505L177.528 672.634L181.289 678.019L184.281 684.003L191.804 705.289L200.352 721.531L198.899 721.702L190.436 719.565L180.776 715.205L150.087 708.709L146.753 707.426Z"
+                        fill="white"
+                        stroke="#1EBFE3"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        title="CULFA RPŞ"
+                        data-id="69"
+                        data-pid="0"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        class="blue-tooltip"
+                        d="M166.243 640.664L162.824 645.109L159.918 648.529L156.84 651.777L155.9 654.769L155.216 658.017L154.275 661.693L152.908 665.284L147.779 676.482L141.624 684.261L140.769 687.339L140.256 690.758L139.572 692.554L139.914 694.434L145.129 698.196L149.488 702.641L146.753 707.428L139.23 704.436L126.236 704.351L117.944 702.299L113.926 702.128L112.815 701.871L112.217 694.862L114.183 692.383L115.038 689.818L111.191 684.176L108.455 677.936L111.191 672.123L111.618 665.369L107.515 662.377L102.899 660.667L109.139 656.735L112.131 649.896L116.491 647.075L114.867 641.775L121.107 638.185L127.519 635.706L131.707 633.398L134.956 636.902L138.632 637.586L141.709 633.74L146.154 628.439L146.582 629.294L154.874 631.431L157.866 633.91L160.601 636.902L164.106 639.638L166.243 640.664Z"
+                        fill="white"
+                        stroke="#1EBFE3"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        title="BABƏK RPŞ"
+                        data-id="68"
+                        data-pid="0"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        class="blue-tooltip"
+                        d="M96.5726 602.965L95.0339 605.017L90.3322 608.949L86.8273 614.335L89.0499 616.045L92.2129 617.327L93.4951 621.259L95.0339 625.363L101.531 628.526L108.284 631.945L111.362 635.877L111.02 639.639L112.387 642.203L114.867 641.776L116.491 647.076L112.131 649.897L103.07 650.068L93.8371 650.752L85.8015 650.324L80.1594 654.684L90.2467 662.121L102.899 660.668L107.515 662.378L111.618 665.37L111.191 672.123L108.455 677.936L111.191 684.177L115.037 689.819L114.183 692.383L112.216 694.862L112.815 701.872L112.131 701.787L109.139 699.992L105.121 698.88L101.787 697.256L98.7098 695.204L97.0001 693.238L96.7436 691.186L97.7694 688.024L98.1114 686.057L97.342 684.861L93.9226 683.236L92.5548 682.211L91.7854 680.672L90.6741 676.568L90.0757 675.115L88.6225 673.662L86.0579 671.867L85.0321 669.986L86.3144 667.165L85.4595 665.199L83.5788 664.002L81.5272 663.575L80.0739 662.891L80.1594 661.267L80.5014 659.471L80.0739 658.275L78.7062 658.104L77.4239 658.702L75.9706 659.728L60.8397 654.684L56.9928 655.881L56.0525 652.975L54.5138 643.657L53.4879 641.605L52.2911 639.81L51.4363 637.844L54.6847 639.126L57.9332 640.152L61.78 638.955L65.5414 637.16L68.4479 635.193L69.0463 631.005L67.0801 626.559L67.8495 624.337L68.7898 622.456L67.6785 617.242L65.5414 612.283L64.601 607.24L65.7124 602.196L67.1656 596.298L69.0463 590.656L72.3802 585.441L73.577 584.244L77.1674 589.373L78.8771 593.306L80.3304 595.443L82.4675 596.298L89.3918 596.896L91.9564 598.264L96.5726 602.965Z"
+                        fill="white"
+                        stroke="#1EBFE3"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        title="NAXÇIVAN MR DİN"
+                        data-id="70"
+                        data-pid="0"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        class="blue-tooltip"
+                        d="M102.899 660.668L90.2471 662.121L80.1598 654.684L85.8018 650.324L93.8375 650.751L103.07 650.067L112.131 649.896L109.139 656.735L102.899 660.668Z"
+                        fill="white"
+                        stroke="#1EBFE3"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <div class="city-modal" id="city_43">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>SUMQAYIT ŞPİ</h2>
+                      <h2 class="modal-second-line">Sumqayıt şəhəri</h2>
+                      <p class="city-modal-text">AZ5000</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (18) 644-06-02</p>
+                            <p>Növbətçi hissə: (18) 654-02-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(18) 654-49-86</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/sumqayit-seheri"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_78">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Göygöl</h2>
+                      <div class="point-info"></div>
+                    </div>
+                    <div class="city-modal" id="city_18">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>AĞDAŞ RPŞ</h2>
+                      <h2 class="modal-second-line">Ağdaş rayonu</h2>
+                      <p class="city-modal-text">AZ0300</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2023) 5-55-53</p>
+                            <p>Növbətçi hissə: (2023) 5-51-81</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2023) 5-51-81</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/agdas"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_17">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>AĞDAM RPŞ</h2>
+                      <h2 class="modal-second-line">Ağdam rayonu</h2>
+                      <p class="city-modal-text">AZ0200</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2632) 4-00-44</p>
+                            <p>Növbətçi hissə: (2632) 5-02-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2632) 5-02-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/agdam"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_19">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>AĞSU RPŞ</h2>
+                      <h2 class="modal-second-line">Ağsu rayonu</h2>
+                      <p class="city-modal-text">AZ0600</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2022) 6-50-14</p>
+                            <p>Növbətçi hissə: (2022) 6-51-23</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2022) 6-27-93</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/agsu-rayonu"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_48">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>AĞCABƏDİ RPŞ</h2>
+                      <h2 class="modal-second-line">Ağcabədi rayonu</h2>
+                      <p class="city-modal-text">AZ0400</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2127) 5-52-55</p>
+                            <p>Növbətçi hissə: (2127) 5-50-17</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2127) 5-51-05</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/agcabedi-rayonu"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_9">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Mingəçevir şəhəri</h2>
+                      <div class="point-info"></div>
+                    </div>
+                    <div class="city-modal" id="city_16">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>ABŞERON RPİ</h2>
+                      <h2 class="modal-second-line">Abşeron rayonu</h2>
+                      <p class="city-modal-text">AZ0100</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 590-64-20</p>
+                            <p>Növbətçi hissə: (012) 342-02-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(012) 342-10-27</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/absheron-rayonu"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_57">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>ZAQATALA RPŞ</h2>
+                      <h2 class="modal-second-line">Zaqatala rayonu</h2>
+                      <p class="city-modal-text">AZ6200</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2422) 5-70-15</p>
+                            <p>Növbətçi hissə: (2422) 5-26-20</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2422) 5-26-99</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/zaqatala-rayonu"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_20">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>HACIQABUL RPŞ</h2>
+                      <h2 class="modal-second-line">Hacıqabul rayonu</h2>
+                      <p class="city-modal-text">AZ2400</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2120) 4-11-51</p>
+                            <p>Növbətçi hissə: (2120) 4-10-32</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2120) 4-41-94</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/hacıqabul-rayonu"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_14">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>YEVLAX RPŞ</h2>
+                      <h2 class="modal-second-line">Yevlax rayonu</h2>
+                      <p class="city-modal-text">AZ6600</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2233) 6-70-10</p>
+                            <p>Növbətçi hissə: (2233) 6-45-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2233) 6-11-10</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/yevlax-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_73">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>NAFTALAN RPŞ</h2>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/naftalan-sps"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_75">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>ŞİRVAN ŞPŞ</h2>
+                      <div class="point-info"></div>
+                    </div>
+                    <div class="city-modal" id="city_67">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Şərur rayonu</h2>
+                      <h2 class="modal-second-line">ŞƏRUR RPİ</h2>
+                      <p class="city-modal-text">AZ6800</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (36) 542-22-11</p>
+                            <p>Növbətçi hissə: (36) 542-21-10</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/Sherur-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_79">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Kəngərli rayonu</h2>
+                      <h2 class="modal-second-line">KƏNGƏRLİ RPŞ</h2>
+                      <p class="city-modal-text">AZ7403</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (36) 548-01-02</p>
+                            <p>Növbətçi hissə: (36) 548-01-10</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/kengerli-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_71">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Şahbuz rayonu</h2>
+                      <h2 class="modal-second-line">ŞAHBUZ RPŞ</h2>
+                      <p class="city-modal-text">AZ7100</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (36) 543-02-00</p>
+                            <p>Növbətçi hissə: (36) 543-02-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/shahbuz-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_65">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Sədərək rayonu</h2>
+                      <h2 class="modal-second-line">SƏDƏRƏK RPŞ</h2>
+                      <p class="city-modal-text">AZ7300</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (36) 549-22-22</p>
+                            <p>Növbətçi hissə: (36) 549-22-01</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/sederek-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_66">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2 class="map-main-title"> <img src="./src/img/location.svg" alt="">
+                        Ordubad rayonu</h2>
+                      <h2 class="modal-second-line">Boş yer sayı : <span>34</span></h2>
+                      <p class="city-modal-text">Ərazi üzrə qoşulmaların ümumi sayı : <span>1234</span></p>
+                      <!-- <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (36) 547-41-81</p>
+                            <p>Növbətçi hissə: (36) 547-41-80</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/ordubad-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                    <div class="city-modal" id="city_69">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Culfa rayonu</h2>
+                      <h2 class="modal-second-line">CULFA RPŞ</h2>
+                      <p class="city-modal-text">AZ7200</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (36) 546-02-00</p>
+                            <p>Növbətçi hissə: (36) 546-06-40</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/culfa-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_68">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Babək rayonu</h2>
+                      <h2 class="modal-second-line">BABƏK RPİ</h2>
+                      <p class="city-modal-text">AZ6700</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (36)&nbsp; 541-37-07</p>
+                            <p>Növbətçi hissə: (36) 541-32-36</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/babek-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_70">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Naxçıvan şəhəri</h2>
+                      <h2 class="modal-second-line">NAXÇIVAN ŞPİ</h2>
+                      <p class="city-modal-text">AZ7000</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Növbətçi hissə: (36) 545-61-26</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(36)&nbsp; 550-69-47</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/naxcivan-mr-din"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_47">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>ZƏRDAB RPŞ</h2>
+                      <h2 class="modal-second-line">Zərdab rayonu</h2>
+                      <p class="city-modal-text">AZ6300</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2029) 6-68-68</p>
+                            <p>Növbətçi hissə: (2029) 6-60-48</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2029) 6-60</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/zerdab-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_62">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>TƏRTƏR RPŞ</h2>
+                      <h2 class="modal-second-line">Tərtər rayonu</h2>
+                      <p class="city-modal-text">AZ5900</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2223) 6-31-81</p>
+                            <p>Növbətçi hissə: (2223) 6-19-95</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2223) 6-3034</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/terter-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_61">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>ŞUŞA RPŞ</h2>
+                      <h2 class="modal-second-line">Şuşa</h2>
+                      <p class="city-modal-text">AZ5800</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 590-82-90</p>
+                            <p>Növbətçi hissə: (012) 590-82-89</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/susa-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_42">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>ŞAMAXI RPŞ</h2>
+                      <h2 class="modal-second-line">Şamaxı rayonu</h2>
+                      <p class="city-modal-text">AZ5600</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2026) 5-00-04</p>
+                            <p>Növbətçi hissə: (2026) 5-11-44</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2026) 5-21-01</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/samaxi-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_38">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>SİYƏZƏN RPŞ</h2>
+                      <h2 class="modal-second-line">Siyəzən rayonu</h2>
+                      <p class="city-modal-text">AZ5300</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2330) 4-00-50</p>
+                            <p>Növbətçi hissə: (2330) 4-02-21</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2330) 4-13-03</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/siyezen-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_41">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>SALYAN RPŞ</h2>
+                      <h2 class="modal-second-line">Salyan rayonu</h2>
+                      <p class="city-modal-text">AZ5200</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2125) 5-56-46</p>
+                            <p>Növbətçi hissə: (2125) 5-51-83</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2125) 5-51-12</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/salyan-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_12">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>SAMUX RPŞ</h2>
+                      <h2 class="modal-second-line">Samux rayonu</h2>
+                      <p class="city-modal-text">AZ5100</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2227) 5-15-33</p>
+                            <p>Növbətçi hissə: (2227) 5-11-05</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2227) 5-20-84</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/samux-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_40">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>SABİRABAD RPŞ</h2>
+                      <h2 class="modal-second-line">Sabirabad rayonu</h2>
+                      <p class="city-modal-text">AZ5400</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2123) 5-50-03</p>
+                            <p>Növbətçi hissə: (2123) 5-52-03</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2123) 5-81-72</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/sabirabad-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_39">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>SAATLI RPŞ</h2>
+                      <h2 class="modal-second-line">Saatlı rayonu</h2>
+                      <p class="city-modal-text">AZ4900</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2128) 5-20-78</p>
+                            <p>Növbətçi hissə: (2128) 5-21-78</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2128) 5-30-78</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/saatli-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_51">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>OĞUZ RPŞ</h2>
+                      <h2 class="modal-second-line">Oğuz rayonu</h2>
+                      <p class="city-modal-text">AZ4800</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2421) 5-38-88</p>
+                            <p>Növbətçi hissə: (2421) 5-22-81</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2421) 5-28-71</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/oguz-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_36">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>NEFTÇALA RPŞ</h2>
+                      <h2 class="modal-second-line">Neftçala rayonu</h2>
+                      <p class="city-modal-text">AZ4700</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2126) 3-32-00</p>
+                            <p>Növbətçi hissə: (2126) 3-31-49</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2126) 3-10-67</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/neftcala-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_33">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>LƏNKƏRAN ŞRPŞ</h2>
+                      <h2 class="modal-second-line">Lənkəran</h2>
+                      <p class="city-modal-text">AZ4201</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2525) 2-10-10</p>
+                            <p>Növbətçi hissə: (2525) 2-17-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2525) 2-17-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/lenkeran-srpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_59">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>LAÇIN RPŞ</h2>
+                      <h2 class="modal-second-line">Laçın rayonu</h2>
+                      <p class="city-modal-text">AZ0410</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2127) 7-82-82</p>
+                            <p>Növbətçi hissə: (2127) 7-82-25</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2127) 7-82-24</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/lacin-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_55">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>QUSAR RPİ</h2>
+                      <h2 class="modal-second-line">Qusar rayonu</h2>
+                      <p class="city-modal-text">AZ3800</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2338) 5-21-55</p>
+                            <p>Növbətçi hissə: (2338) 5-28-03</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2338) 5-28-22</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/qusar-rpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_60">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>QUBADLI RPŞ</h2>
+                      <h2 class="modal-second-line">Qubadlı rayonu</h2>
+                      <p class="city-modal-text">AZ5000</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (1864) 5-92-39</p>
+                            <p>Növbətçi hissə: (1864) 4-43-35</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(1864) 4-43-35</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/qubadli-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_8">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>KƏLBƏCƏR RPŞ</h2>
+                      <h2 class="modal-second-line">Kəlbəcər rayonu</h2>
+                      <p class="city-modal-text">AZ2500</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2220) 5-47-55</p>
+                            <p>Növbətçi hissə: (2220) 5-22-59</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2220) 5-22-59</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/kelbecer-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_30">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>İMİŞLİ RPŞ</h2>
+                      <h2 class="modal-second-line">İmişli rayonu</h2>
+                      <p class="city-modal-text">AZ3000</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2124) 6-11-55</p>
+                            <p>Növbətçi hissə: (2124) 6-60-13</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2124) 6-60-13</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/imishli-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_58">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>XOCAVƏND RPŞ</h2>
+                      <h2 class="modal-second-line">Xocavənd rayonu</h2>
+                      <p class="city-modal-text">AZ2800</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 590-82-66</p>
+                            <p>Növbətçi hissə: (012) 590-82-67</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/xocavend-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_63">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>XOCALI RPŞ</h2>
+                      <h2 class="modal-second-line">Xocalı rayonu</h2>
+                      <p class="city-modal-text">AZ2212</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2224) 74-5-00</p>
+                            <p>Növbətçi hissə: (2224) 74-5-05</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2224) 74-5-05</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/xocali-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_7">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>GORANBOY RPŞ</h2>
+                      <h2 class="modal-second-line">Goranboy rayonu</h2>
+                      <p class="city-modal-text">AZ2200</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2224) 5-32-00</p>
+                            <p>Növbətçi hissə: (2224) 5-30-72</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2224) 5-27-24</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/goranboy-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_5">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>GƏNCƏ ŞBPİ</h2>
+                      <h2 class="modal-second-line">Gəncə şəhəri</h2>
+                      <p class="city-modal-text">AZ2000</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (22) 56-75-09</p>
+                            <p>Növbətçi hissə: (22) 56-07-73</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(22) 56-22-94</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/gence-sbpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_4">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>GƏDƏBƏY RPŞ</h2>
+                      <h2 class="modal-second-line">Gədəbəy rayonu</h2>
+                      <p class="city-modal-text">AZ2100</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2232) 6-00-54</p>
+                            <p>Növbətçi hissə: (2232) 6-00-53</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2232) 6-00-53</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/gedebey-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_28">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>FÜZULİ RPŞ</h2>
+                      <h2 class="modal-second-line">Füzuli rayonu</h2>
+                      <p class="city-modal-text">AZ1900</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2631) 5-51-66</p>
+                            <p>Növbətçi hissə: (2631) 5-50-98</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2631) 5-50-98</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/fuzuli-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_25">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>CƏBRAYIL RPŞ</h2>
+                      <h2 class="modal-second-line">Cəbrayıl rayonu</h2>
+                      <p class="city-modal-text">AZ1400</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2638) 4-36-00</p>
+                            <p>Növbətçi hissə: (2638) 4-36-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2638) 4-36-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/cebrayil-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_64">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>ZƏNGİLAN RPŞ</h2>
+                      <h2 class="modal-second-line">Zəngilan rayonu</h2>
+                      <p class="city-modal-text">AZ0116</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 590-64-25</p>
+                            <p>Növbətçi hissə: (012) 590-64-30</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(012) 341-40-14</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/zengilan-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_53">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <div class="point-info"></div>
+                    </div>
+                    <div class="city-modal" id="city_15">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Bakı</h2>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/baki"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_56">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>XAÇMAZ RPİ</h2>
+                      <h2 class="modal-second-line">Xaçmaz rayonu</h2>
+                      <p class="city-modal-text">AZ2700</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2332) 5-53-10</p>
+                            <p>Növbətçi hissə: (2332) 5-53-56</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2332) 5-25-42</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/xacmaz-rpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_54">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>QUBA RPİ</h2>
+                      <h2 class="modal-second-line">Quba rayonu</h2>
+                      <p class="city-modal-text">AZ4000</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2333) 5-40-40</p>
+                            <p>Növbətçi hissə: (2333) 5-43-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2333) 5-35-11</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/quba-rpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_52">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>QAX RPŞ</h2>
+                      <h2 class="modal-second-line">Qax rayonu</h2>
+                      <p class="city-modal-text">AZ3400</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2425) 5-21-00</p>
+                            <p>Növbətçi hissə: (2425) 5-23-52</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2425) 5-27-12</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/qax-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_50">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>QƏBƏLƏ RPŞ</h2>
+                      <h2 class="modal-second-line">Qəbələ rayonu</h2>
+                      <p class="city-modal-text">AZ3600</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2420) 5-24-00</p>
+                            <p>Növbətçi hissə: (2420) 5-18-28</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2420) 5-18-28</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/qebele-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_49">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>BALAKƏN RPŞ</h2>
+                      <h2 class="modal-second-line">Balakən rayonu</h2>
+                      <p class="city-modal-text">AZ0800</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2429) 5-17-57</p>
+                            <p>Növbətçi hissə: (2429) 5-18-65</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2429) 5-10-37</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/balaken-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_45">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>XIZI RPŞ</h2>
+                      <h2 class="modal-second-line">Xızı rayonu</h2>
+                      <p class="city-modal-text">AZ8000</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2331) 5-00-10</p>
+                            <p>Növbətçi hissə: (2331) 5-01-31</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2331) 5-05-73</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/xizi-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_44">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>UCAR RPŞ</h2>
+                      <h2 class="modal-second-line">Ucar rayonu</h2>
+                      <p class="city-modal-text">AZ6100</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2021) 3-09-33</p>
+                            <p>Növbətçi hissə: (2021) 3-00-53</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2021) 3-15-85</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/ucar-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_37">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>QOBUSTAN RPŞ</h2>
+                      <h2 class="modal-second-line">Qobustan rayonu</h2>
+                      <p class="city-modal-text">AZ3700</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2024) 5-00-10</p>
+                            <p>Növbətçi hissə: (2024) 5-00-83</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2024) 5-22-52; (2024) 5-24-32</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/qobustan-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_31">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>İSMAYILLI RPŞ</h2>
+                      <h2 class="modal-second-line">İsmayıllı rayonu</h2>
+                      <p class="city-modal-text">AZ3100</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2028) 5-46-46</p>
+                            <p>Növbətçi hissə: (2028) 5-11-89</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2028) 5-55-11</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/ismayilli-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_27">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Şabran RPŞ</h2>
+                      <h2 class="modal-second-line">Şabran rayonu</h2>
+                      <p class="city-modal-text">AZ1700</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2335) 3-26-00</p>
+                            <p>Növbətçi hissə: (2335) 3-27-23</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2335) 3-27-23</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/shabran-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_22">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>BƏRDƏ RPŞ</h2>
+                      <h2 class="modal-second-line">Bərdə rayonu</h2>
+                      <p class="city-modal-text">AZ0900</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2020) 5-55-24</p>
+                            <p>Növbətçi hissə: (2020) 5-67-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(012) 585-02-44</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/berde-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_13">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>TOVUZ RPŞ</h2>
+                      <h2 class="modal-second-line">Tovuz rayonu</h2>
+                      <p class="city-modal-text">AZ6001</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2231) 5-00-01</p>
+                            <p>Növbətçi hissə: (2231) 5-00-94</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2231) 5-30-00</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/tovuz-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_11">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>ŞƏMKİR RPŞ</h2>
+                      <h2 class="modal-second-line">Şəmkir rayonu</h2>
+                      <p class="city-modal-text">AZ5700</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2230) 5-26-00</p>
+                            <p>Növbətçi hissə: (2230) 5-28-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2230) 5-32-85</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/shemkir-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_10">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Qazax RPŞ</h2>
+                      <h2 class="modal-second-line">Qazax rayonu</h2>
+                      <p class="city-modal-text">AZ3500</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2229) 5-37-97</p>
+                            <p>Növbətçi hissə: (2229) 5-14-97</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2229) 5-29-03</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/qazax-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_2">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>AĞSTAFA RPŞ</h2>
+                      <h2 class="modal-second-line">Ağstafa rayonu</h2>
+                      <p class="city-modal-text">AZ0500</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2222) 5-37-07</p>
+                            <p>Növbətçi hissə: (2222) 5-25-52</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2222) 5-35-05</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/agstafa-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_21">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>ASTARA RPŞ</h2>
+                      <h2 class="modal-second-line">Astara rayonu</h2>
+                      <p class="city-modal-text">AZ0700</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2522) 5-24-61</p>
+                            <p>Növbətçi hissə: (2522) 5-40-99</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2522) 5-32-11</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/astara-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_35">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>LERİK RPŞ</h2>
+                      <h2 class="modal-second-line">Lerik rayonu</h2>
+                      <p class="city-modal-text">AZ4300</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2527) 4-64-00</p>
+                            <p>Növbətçi hissə: (2527) 4-60-69</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2527) 4-43-06</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/lerik-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_46">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>YARDIMLI RPŞ</h2>
+                      <h2 class="modal-second-line">Yardımlı rayonu</h2>
+                      <p class="city-modal-text">AZ6500</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2520) 6-31-31</p>
+                            <p>Növbətçi hissə: (2520) 6-11-05</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2520) 6-27-40</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/yardimli-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_23">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>BEYLƏQAN RPŞ</h2>
+                      <h2 class="modal-second-line">Beyləqan rayonu</h2>
+                      <p class="city-modal-text">AZ1200</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2122) 5-26-52</p>
+                            <p>Növbətçi hissə: (2122) 5-20-15</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2122) 5-20-15</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/beyleqan-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_24">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>BİLƏSUVAR RPŞ</h2>
+                      <h2 class="modal-second-line">Biləsuvar rayonu</h2>
+                      <p class="city-modal-text">AZ7104</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2529)&nbsp; 5-02-40</p>
+                            <p>Növbətçi hissə: (2529)&nbsp; 5-04-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2529)&nbsp; 5-00-39</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/bilesuvar-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_26">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>CƏLİLABAD RPŞ</h2>
+                      <h2 class="modal-second-line">Cəlilabad rayonu</h2>
+                      <p class="city-modal-text">AZ1500</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2524) 5-01-19</p>
+                            <p>Növbətçi hissə: (2524) 5-52-19</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2524) 5-52-19</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/celilabad-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_34">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>MASALLI RPŞ</h2>
+                      <h2 class="modal-second-line">Masallı rayonu</h2>
+                      <p class="city-modal-text">AZ4400</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2521) 5-63-23</p>
+                            <p>Növbətçi hissə: (2521) 5-61-34</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2521) 5-39-42</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/masalli-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_3">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>DAŞKƏSƏN RPŞ</h2>
+                      <h2 class="modal-second-line">Daşkəsən rayonu</h2>
+                      <p class="city-modal-text">AZ1600</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2221) 5-55-77</p>
+                            <p>Növbətçi hissə: (2221) 5-30-59</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2221) 5-30-44</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/daskesen-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_32">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>KÜRDƏMİR RPŞ</h2>
+                      <h2 class="modal-second-line">Kürdəmir rayonu</h2>
+                      <p class="city-modal-text">AZ3300</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2025) 5-20-00</p>
+                            <p>Növbətçi hissə: (2025) 5-04-10</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2025) 5-04-73</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/kurdemir-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_29">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>GÖYÇAY RPŞ</h2>
+                      <h2 class="modal-second-line">Göyçay rayonu</h2>
+                      <p class="city-modal-text">AZ2300</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (2027) 4-85-00</p>
+                            <p>Növbətçi hissə: (2027) 4-04-91</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(2027) 4-42-91</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/goycay-rpsh"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_72">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <div class="point-info"></div>
+                    </div>
+                    <div class="city-modal" id="city_74">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <div class="point-info"></div>
+                    </div>
+                    <div class="city-modal" id="city_76">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <div class="point-info"></div>
+                    </div>
+                    <div class="city-modal" id="city_77">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <div class="point-info"></div>
+                    </div>
+                    <div class="city-modal" id="city_92">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>PİRALLAHI RPİ</h2>
+                      <h2 class="modal-second-line">Pirallahı rayonu</h2>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/pirallahi-rpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_82">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Xəzər rayonu</h2>
+                      <h2 class="modal-second-line">Xəzər rayonu</h2>
+                      <p class="city-modal-text">AZ1044</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 554-93-14</p>
+                            <p>Növbətçi hissə: (012) 454-22-22</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/xezer-rayonu"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_81">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>Suraxanı rayonu</h2>
+                      <div class="point-info"></div>
+                    </div>
+                    <div class="city-modal" id="city_88">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>XƏTAİ rayonu</h2>
+                      <h2 class="modal-second-line">Xətai rayonu</h2>
+                      <p class="city-modal-text">AZ1142</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 570-39-69</p>
+                            <p>Növbətçi hissə: (012) 370-99-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/xetai-rayonu"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_80">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>QARADAĞ RPİ</h2>
+                      <h2 class="modal-second-line">Qaradağ rayonu</h2>
+                      <p class="city-modal-text">AZ1063</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 445-82-10</p>
+                            <p>Növbətçi hissə: (012) 445-22-22</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/qaradag-rpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_83">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>SABUNÇU RPİ</h2>
+                      <h2 class="modal-second-line">Sabunçu rayonu</h2>
+                      <p class="city-modal-text">AZ1034</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 450-00-10</p>
+                            <p>Növbətçi hissə: (012) 450-02-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/sabuncu-rpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_84">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>BİNƏQƏDİ RPİ</h2>
+                      <h2 class="modal-second-line">Binəqədi rayonu</h2>
+                      <p class="city-modal-text">AZ3700</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 562-90-37</p>
+                            <p>Növbətçi hissə: (012) 561-02-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/bineqedi-rpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_85">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>NƏSİMİ RPİ</h2>
+                      <h2 class="modal-second-line">Nəsimi rayonu</h2>
+                      <p class="city-modal-text">AZ1007</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 430-09-09</p>
+                            <p>Növbətçi hissə: (012) 431-02-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/nesimi-rpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_86">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>YASAMAL RPİ</h2>
+                      <h2 class="modal-second-line">Yasamal rayonu</h2>
+                      <p class="city-modal-text">AZ1073</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 537-11-15</p>
+                            <p>Növbətçi hissə: (012) 510-48-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/yasamal-rpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_87">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>SƏBAİL RPİ</h2>
+                      <h2 class="modal-second-line">Səbail rayonu</h2>
+                      <p class="city-modal-text">AZ1003</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 491-00-01</p>
+                            <p>Növbətçi hissə: (012) 491-02-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(012) 491-61-18</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/sebail-rpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_89">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>NİZAMİ RPİ</h2>
+                      <h2 class="modal-second-line">Nizami rayonu</h2>
+                      <p class="city-modal-text">AZ1029</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 567-23-43</p>
+                            <p>Növbətçi hissə: (012) 566-02-10</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/nizami-rpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_90">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>NƏRİMANOV RPİ</h2>
+                      <h2 class="modal-second-line">Nərimanov rayonu</h2>
+                      <p class="city-modal-text">AZ1005</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 465-59-11</p>
+                            <p>Növbətçi hissə: (012) 564-39-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/nerimanov-rpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="city-modal" id="city_91">
+                      <span
+                        onclick="closeCityModal()"
+                        class="map-close-icon"
+                      ></span>
+                      <h2>SƏBAİL RPİ</h2>
+                      <h2 class="modal-second-line">Səbail rayonu</h2>
+                      <p class="city-modal-text">AZ1003</p>
+                      <div class="point-info">
+                        <div class="point-info-item">
+                          <span class="map-phone-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>Rəis: (012) 491-00-01</p>
+                            <p>Növbətçi hissə: (012) 491-02-02</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <span class="map-fax-icon"></span>
+                          <div class="point-info-item-desc">
+                            <p>(012) 491-61-18</p>
+                          </div>
+                        </div>
+                        <div class="point-info-item">
+                          <div class="point-info-item-desc">
+                            <p>
+                              <a
+                                href="https://nmia.gov.az/az/map/sebail-rpi"
+                                class="transition-a"
+                                >Keçid</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-bottom">
+                <a href="javascript:history.go(-1);" class="back-page"
+                  >Geriyə qayıt</a
+                >
+                <a class="print-icon no-print" href="#" target="_blank">
+                  <img
+                    src="/src/img/print.png"
+                    onclick="window.print()"
+                    alt="print"
+                    class="print-image"
+                    style="width: 100%"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -3257,30 +6011,6 @@
         </div>
       </section>
 
-      <section class="optica">
-        <div class="row">
-          <div class="col">
-            <div class="optica-gpon">
-              <img
-                src="./src/img/location.png"
-                alt=""
-                class="optica-gpon-img"
-              />
-              <p class="check">
-                Optik (GPON) internetə qoşulmanın mümkünlüyünü yoxla
-              </p>
-              <p class="optica-gpon-text">
-                Ünvanınızı daxil edin və ərazinizdə GPON infrastrukturunun
-                mövcudluğunu dərhal öyrənin.
-              </p>
-            </div>
-            <a href="./gpon.html" class="optica-btn">Yoxla</a>
-          </div>
-
-          <div class="col"></div>
-        </div>
-      </section>
-
       <section class="news-section">
         <h2 class="main-title">Xəbərlər</h2>
 
@@ -3484,6 +6214,8 @@
     <script src="./src/js/jquery.min.js"></script>
     <script src="./src/js/bootstrap.bundle.js"></script>
     <script src="./src/js/owl.carousel.min.js"></script>
+    <!-- Map.js yalnız ana səhifəyə qoşulacaq. -->
+    <script src="./src/js/map.js"></script>
     <script src="./src/js/main.js"></script>
   </body>
 </html>
