@@ -1176,6 +1176,7 @@ header {
   width: 100%;
   gap: 20px;
   padding: 8px 0;
+  margin: 14px 0;
 }
 
 .private-cabinet-btn {
@@ -1275,7 +1276,9 @@ header {
   text-decoration: none;
   background: var(--whiteColor);
   flex-shrink: 0;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .call-center:hover {
@@ -1424,7 +1427,9 @@ header {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
   flex-shrink: 0;
   margin-right: 8px;
 }
@@ -1504,7 +1509,9 @@ body.search-open header {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 .search-panel-close:hover {
@@ -1613,7 +1620,10 @@ body.search-open header {
   text-decoration: none;
   white-space: normal;
   max-width: 280px;
-  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
 }
 
 .search-tag:hover {
@@ -1638,7 +1648,9 @@ body.search-open header {
   color: #444;
   text-decoration: none;
   max-width: 360px;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .search-suggestion-item:hover {
