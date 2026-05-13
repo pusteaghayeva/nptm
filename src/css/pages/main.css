@@ -945,14 +945,9 @@ body {
     width: 100%;
   }
 
-  .map-select,
-  .map-input {
-    width: 100%;
-  }
-
   .map-select-wrap,
   .map-input-wrap {
-    width: 50%;
+    width: 100%;
     border-right: none;
     border-bottom: 1px solid #e0e4ef;
   }
@@ -1434,7 +1429,7 @@ body {
   font-size: 32px;
   color: var(--mainColor);
   font-weight: 600;
-  /* margin: 60px 0 40px; */
+  /* text-align: center; */
 }
 
 .postal-address-img {
@@ -1485,10 +1480,8 @@ body {
 
 .map-select-wrap {
   position: relative;
-  border: 1px solid #e0e4ef;
-  border-radius: 4px;
   background: var(--whiteColor);
-  height: 48px;
+  /* height: 48px; */
   display: flex;
   align-items: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -1497,25 +1490,34 @@ body {
 .map-select {
   height: 48px;
   padding: 0 36px 0 16px;
-  border: none;
+  /* border: none; */
   outline: none;
   background: transparent;
+  color: var(--amount);
   font-size: 16px;
   font-weight: 500;
-  color: var(--mainColor);
   appearance: none;
   cursor: pointer;
   min-width: 140px;
+  border: 1px solid var(--inputBorderColor);
+  border-radius: 4px;
 }
-
+/* Yalnız bunlar işləyir */
+.map-select option {
+  background-color: var(--whiteColor);
+  color: var(--mainColor);
+  font-size: 16px;
+  padding: 8px;
+}
 .map-input-wrap {
   position: relative;
-  border: 1px solid #e0e4ef;
+  border: 1px solid var(--inputBorderColor);
   border-radius: 4px;
   background: var(--whiteColor);
   height: 48px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
@@ -1533,104 +1535,75 @@ body {
 .map-input {
   height: 48px;
   padding: 0 16px;
-  border: 1px solid #e0e4ef;
+  border: 1px solid var(--inputBorderColor);
   border-radius: 4px;
   background: var(--whiteColor);
   outline: none;
-  font-size: 14px;
-  color: #333;
+  color: var(--amount);
+  font-size: 16px;
+  font-weight: 500;
   width: 130px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .map-search-btn {
   height: 48px;
   padding: 0 24px;
   background: var(--mainColor);
-  color: #fff;
+  color: var(--whiteColor);
   border: none;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
+  font-family: var(--fontInter);
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   transition: opacity 0.2s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: 220px;
+}
+.map-search-btn i {
+  font-size: 24px;
 }
 
 .map-list-btn {
-  height: 48px;
-  padding: 0 20px;
+  height: 80px;
+  padding: 28px 20px;
   background: var(--whiteColor);
-  border: 1px solid #e0e4ef;
+  border: 1px solid var(--privateOficceBg);
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--mainColor);
   display: inline-flex;
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
   transition: background 0.2s ease;
   white-space: nowrap;
   margin-left: 4px;
 }
-/* .map-search-bar {
-  display: flex;
-  align-items: center;
-  background: var(--whiteColor);
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-  padding: 20px;
-} */
 
-/* .map-select-wrap {
-  position: relative;
-} */
 .map-select,
 .map-input,
 .map-input-wrap,
 .map-search-btn {
+  width: 100%;
   height: 56px; /* hamısı eyni hündürlük */
 }
-/* .map-select {
-  padding: 0 36px 0 16px;
-  border: none;
-  outline: none;
-  background: transparent;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--mainColor);
-  appearance: none;
-  cursor: pointer;
-  min-width: 140px;
-  border: 1px solid var(--amount);
-  border-radius: 4px;
-} */
 
 .map-select-icon {
   position: absolute;
   right: 12px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 11px;
+  font-size: 20px;
   color: var(--mainColor);
   pointer-events: none;
 }
-
-/* .map-input-wrap {
-  position: relative;
-  border: 1px solid var(--amount);
-  padding: 20px;
-} */
-
-/* .map-input-wrap .map-input {
-  padding-right: 36px;
-} */
 
 .map-input-icon {
   position: absolute;
@@ -1642,65 +1615,15 @@ body {
   pointer-events: none;
 }
 
-/* .map-input {
-  height: 48px;
-  padding: 0 16px;
-  border: none;
-  border-right: 1px solid #e0e4ef;
-  outline: none;
-  background: transparent;
-  font-size: 14px;
-  color: #333;
-  width: 130px;
-} */
-
-.map-input-phone {
-  border-right: none;
-}
-
 .map-input::placeholder {
-  color: #aab0c0;
+  color: var(--amount);
+  font-size: 16px;
+  font-weight: 500;
 }
-
-/* .map-search-btn {
-  height: 48px;
-  padding: 0 24px;
-  background: var(--mainColor);
-  color: #fff;
-  border: none;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  letter-spacing: 0.04em;
-  transition: opacity 0.2s ease;
-  flex-shrink: 0;
-} */
 
 .map-search-btn:hover {
   opacity: 0.88;
 }
-
-/* .map-list-btn {
-  height: 48px;
-  padding: 0 20px;
-  background: var(--whiteColor);
-  border: 1px solid #e0e4ef;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--mainColor);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-  transition: background 0.2s ease;
-  white-space: nowrap;
-} */
 
 .map-list-btn:hover {
   background: #f5f7fc;
@@ -1832,7 +1755,24 @@ body {
   .contact-map .select-map {
     margin-top: 0;
   }
-
+  .responsive-map {
+    padding: 20px 0;
+  }
+  .responsive-map-options {
+    width: 95%;
+  }
+  .map-select,
+  .map-input {
+    width: 100%;
+  }
+  .map-input {
+    width: 100%;
+  }
+  .map-list-btn {
+    height: auto;
+    margin: 20px auto;
+    width: 100%;
+  }
   .map-nakh {
     transform: scale(3.5) translate(38%, -29%);
   }
@@ -1841,6 +1781,17 @@ body {
   }
   .modal-second-line {
     margin: 15px auto;
+  }
+
+  .postal-address-title {
+    margin: 0 20px;
+    font-size: 22px;
+    text-align: center;
+  }
+  .postal-address-img {
+    width: 25px;
+    height: 20px;
+    margin-right: 6px;
   }
   .news-section {
     margin: 56px 0;
@@ -1912,7 +1863,7 @@ body {
 
   .optica {
     width: auto;
-    background-color: red;
+    /* background-color: red; */
   }
 
   .first-section {

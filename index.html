@@ -3391,7 +3391,7 @@
 
         <div class="container-fluid">
           <div class="responsive-map">
-            <div class="responsive-map-options">
+            <form class="responsive-map-options">
               <div class="map-search-bar">
                 <div class="map-select-wrap">
                   <select class="map-select">
@@ -3401,12 +3401,14 @@
                     <option>Ordubad</option>
                     <option>Culfa</option>
                   </select>
-                  <i class="fa-solid fa-chevron-down map-select-icon"></i>
+                  <!-- <i class="fa-solid fa-chevron-down "></i> -->
+                  <i class="fa-solid fa-angle-down map-select-icon"></i>
                 </div>
 
                 <div class="map-input-wrap">
                   <input type="text" class="map-input" placeholder="AZ1234" />
-                  <i class="fa-solid fa-location-dot map-input-icon"></i>
+                  <!-- <i class="fa-solid fa-location-dot map-input-icon"></i> -->
+                  <img src="./src/img/map_location.svg" alt="" />
                 </div>
 
                 <input
@@ -3415,7 +3417,7 @@
                   placeholder="Nömrə"
                 />
 
-                <button class="map-search-btn" type="button">
+                <button class="map-search-btn" type="submit">
                   <i class="fa-solid fa-magnifying-glass"></i>
                   AXTAR
                 </button>
@@ -3425,7 +3427,7 @@
                 Siyahıya keçid et
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
-            </div>
+            </form>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3091.6908730951523!2d45.40564968893768!3d39.204472355466145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40142e00874d892d%3A0x5a5036c352da6d3d!2zNiBIZXlkyZlyIMaPbGl5ZXYgUHJvc3Bla3RpLCBOYXjDp8SxdmFuLCBBemVyYmFpamFu!5e0!3m2!1sen!2sus!4v1744967118922!5m2!1sen!2sus"
               style="border: 0"
