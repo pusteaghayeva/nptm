@@ -23,7 +23,6 @@ document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeDrawer();
 });
 
-// Tab switching
 const tabs = document.querySelectorAll('.post-list-tab');
 const tabContents = {
     city:     document.getElementById('tabCity'),
@@ -73,10 +72,10 @@ document.querySelectorAll('.accordion-header').forEach(header => {
         const item = this.closest('.accordion-item');
         const isOpen = item.classList.contains('open');
 
-        // Hamısını bağla
         document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('open'));
 
-        // Bu açıq idisə bağla, deyilsə aç
         if (!isOpen) item.classList.add('open');
     });
 });
+
+document.querySelector('.accordion-item').classList.add('open');

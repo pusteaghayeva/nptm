@@ -3436,7 +3436,7 @@
 
                 <div class="post-list-drawer-inner">
                   <div class="post-list-tabs">
-                    <button class="post-list-tab active" data-tab="city">
+                    <button class="post-list-tab active show" data-tab="city">
                       Naxçıvan şəhəri və rayonlar
                     </button>
                     <button class="post-list-tab" data-tab="index">
@@ -3444,105 +3444,145 @@
                     </button>
                   </div>
 
-                 <div class="post-list-tab-content" id="tabCity">
+                  <div class="post-list-tab-content" id="tabCity">
+                    <div class="accordion-item">
+                      <div class="accordion-header">
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                        <span>Naxçıvan şəhər mərkəzi poçt</span>
+                      </div>
+                      <div class="accordion-body">
+                        <div class="accordion-row">
+                          <span class="acc-code">AZ7000</span>
+                          <span class="acc-address"
+                            ><i class="fa-solid fa-location-dot"></i> Naxçıvan
+                            şəhəri, Atatürk pr. 1</span
+                          >
+                          <span class="acc-phone"
+                            ><i class="fa-solid fa-phone"></i> (036) 545 12
+                            34</span
+                          >
+                          <span class="acc-hours">İş saatı: 09:00-18:00</span>
+                        </div>
+                        <div class="accordion-row">
+                          <span class="acc-code">AZ7001</span>
+                          <span class="acc-address"
+                            ><i class="fa-solid fa-location-dot"></i> Naxçıvan
+                            şəhəri, Babək küç. 5</span
+                          >
+                          <span class="acc-phone"
+                            ><i class="fa-solid fa-phone"></i> (036) 545 12
+                            35</span
+                          >
+                          <span class="acc-hours">İş saatı: 09:00-18:00</span>
+                        </div>
+                      </div>
+                    </div>
 
-    <div class="accordion-item">
-        <div class="accordion-header">
-            <i class="fa-solid fa-chevron-down accordion-icon"></i>
-            <span>Naxçıvan şəhər mərkəzi poçt</span>
-        </div>
-        <div class="accordion-body">
-            <div class="accordion-row">
-                <span class="acc-code">AZ7000</span>
-                <span class="acc-address"><i class="fa-solid fa-location-dot"></i> Naxçıvan şəhəri, Atatürk pr. 1</span>
-                <span class="acc-phone"><i class="fa-solid fa-phone"></i> (036) 545 12 34</span>
-                <span class="acc-hours">İş saatı: 09:00-18:00</span>
-            </div>
-            <div class="accordion-row">
-                <span class="acc-code">AZ7001</span>
-                <span class="acc-address"><i class="fa-solid fa-location-dot"></i> Naxçıvan şəhəri, Babək küç. 5</span>
-                <span class="acc-phone"><i class="fa-solid fa-phone"></i> (036) 545 12 35</span>
-                <span class="acc-hours">İş saatı: 09:00-18:00</span>
-            </div>
-        </div>
-    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header">
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                        <span>Babək rayonu</span>
+                      </div>
+                      <div class="accordion-body">
+                        <div class="accordion-row">
+                          <span class="acc-code">AZ7100</span>
+                          <span class="acc-address"
+                            ><i class="fa-solid fa-location-dot"></i> Babək
+                            şəhəri, Mərkəz küç. 1</span
+                          >
+                          <span class="acc-phone"
+                            ><i class="fa-solid fa-phone"></i> (036) 545 13
+                            00</span
+                          >
+                          <span class="acc-hours">İş saatı: 09:00-18:00</span>
+                        </div>
+                      </div>
+                    </div>
 
-    <div class="accordion-item">
-        <div class="accordion-header">
-            <i class="fa-solid fa-chevron-down accordion-icon"></i>
-            <span>Babək rayonu</span>
-        </div>
-        <div class="accordion-body">
-            <div class="accordion-row">
-                <span class="acc-code">AZ7100</span>
-                <span class="acc-address"><i class="fa-solid fa-location-dot"></i> Babək şəhəri, Mərkəz küç. 1</span>
-                <span class="acc-phone"><i class="fa-solid fa-phone"></i> (036) 545 13 00</span>
-                <span class="acc-hours">İş saatı: 09:00-18:00</span>
-            </div>
-        </div>
-    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header">
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                        <span>Şahbuz rayonu</span>
+                      </div>
+                      <div class="accordion-body">
+                        <div class="accordion-row">
+                          <span class="acc-code">AZ7300</span>
+                          <span class="acc-address"
+                            ><i class="fa-solid fa-location-dot"></i> Şahbuz
+                            şəhəri, İstiqlal küç. 2</span
+                          >
+                          <span class="acc-phone"
+                            ><i class="fa-solid fa-phone"></i> (036) 545 14
+                            00</span
+                          >
+                          <span class="acc-hours">İş saatı: 09:00-18:00</span>
+                        </div>
+                      </div>
+                    </div>
 
-    <div class="accordion-item">
-        <div class="accordion-header">
-            <i class="fa-solid fa-chevron-down accordion-icon"></i>
-            <span>Şahbuz rayonu</span>
-        </div>
-        <div class="accordion-body">
-            <div class="accordion-row">
-                <span class="acc-code">AZ7300</span>
-                <span class="acc-address"><i class="fa-solid fa-location-dot"></i> Şahbuz şəhəri, İstiqlal küç. 2</span>
-                <span class="acc-phone"><i class="fa-solid fa-phone"></i> (036) 545 14 00</span>
-                <span class="acc-hours">İş saatı: 09:00-18:00</span>
-            </div>
-        </div>
-    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header">
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                        <span>Culfa rayonu</span>
+                      </div>
+                      <div class="accordion-body">
+                        <div class="accordion-row">
+                          <span class="acc-code">AZ7200</span>
+                          <span class="acc-address"
+                            ><i class="fa-solid fa-location-dot"></i> Culfa
+                            şəhəri, H.Əliyev küç. 3</span
+                          >
+                          <span class="acc-phone"
+                            ><i class="fa-solid fa-phone"></i> (036) 545 15
+                            00</span
+                          >
+                          <span class="acc-hours">İş saatı: 09:00-18:00</span>
+                        </div>
+                      </div>
+                    </div>
 
-    <div class="accordion-item">
-        <div class="accordion-header">
-            <i class="fa-solid fa-chevron-down accordion-icon"></i>
-            <span>Culfa rayonu</span>
-        </div>
-        <div class="accordion-body">
-            <div class="accordion-row">
-                <span class="acc-code">AZ7200</span>
-                <span class="acc-address"><i class="fa-solid fa-location-dot"></i> Culfa şəhəri, H.Əliyev küç. 3</span>
-                <span class="acc-phone"><i class="fa-solid fa-phone"></i> (036) 545 15 00</span>
-                <span class="acc-hours">İş saatı: 09:00-18:00</span>
-            </div>
-        </div>
-    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header">
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                        <span>Ordubad rayonu</span>
+                      </div>
+                      <div class="accordion-body">
+                        <div class="accordion-row">
+                          <span class="acc-code">AZ7400</span>
+                          <span class="acc-address"
+                            ><i class="fa-solid fa-location-dot"></i> Ordubad
+                            şəhəri, Mərkəz 1</span
+                          >
+                          <span class="acc-phone"
+                            ><i class="fa-solid fa-phone"></i> (036) 545 16
+                            00</span
+                          >
+                          <span class="acc-hours">İş saatı: 09:00-18:00</span>
+                        </div>
+                      </div>
+                    </div>
 
-    <div class="accordion-item">
-        <div class="accordion-header">
-            <i class="fa-solid fa-chevron-down accordion-icon"></i>
-            <span>Ordubad rayonu</span>
-        </div>
-        <div class="accordion-body">
-            <div class="accordion-row">
-                <span class="acc-code">AZ7400</span>
-                <span class="acc-address"><i class="fa-solid fa-location-dot"></i> Ordubad şəhəri, Mərkəz 1</span>
-                <span class="acc-phone"><i class="fa-solid fa-phone"></i> (036) 545 16 00</span>
-                <span class="acc-hours">İş saatı: 09:00-18:00</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="accordion-item">
-        <div class="accordion-header">
-            <i class="fa-solid fa-chevron-down accordion-icon"></i>
-            <span>Kəngərli rayonu</span>
-        </div>
-        <div class="accordion-body">
-            <div class="accordion-row">
-                <span class="acc-code">AZ7060</span>
-                <span class="acc-address"><i class="fa-solid fa-location-dot"></i> Kəngərli r., Mərkəz küç. 4</span>
-                <span class="acc-phone"><i class="fa-solid fa-phone"></i> (036) 545 17 00</span>
-                <span class="acc-hours">İş saatı: 09:00-18:00</span>
-            </div>
-        </div>
-    </div>
-
-</div>
+                    <div class="accordion-item">
+                      <div class="accordion-header">
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                        <span>Kəngərli rayonu</span>
+                      </div>
+                      <div class="accordion-body">
+                        <div class="accordion-row">
+                          <span class="acc-code">AZ7060</span>
+                          <span class="acc-address"
+                            ><i class="fa-solid fa-location-dot"></i> Kəngərli
+                            r., Mərkəz küç. 4</span
+                          >
+                          <span class="acc-phone"
+                            ><i class="fa-solid fa-phone"></i> (036) 545 17
+                            00</span
+                          >
+                          <span class="acc-hours">İş saatı: 09:00-18:00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
                   <div
                     class="post-list-tab-content"
