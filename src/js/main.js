@@ -1,48 +1,48 @@
 // ===== SEARCH PANEL =====
 // ===== SEARCH PANEL =====
-(function () {
-  var toggleBtn = document.getElementById('searchToggleBtn');
-  var panel     = document.getElementById('searchPanel');
-  var closeBtn  = document.getElementById('searchPanelClose');
-  var input     = document.getElementById('searchInput');
+// (function () {
+//   var toggleBtn = document.getElementById('searchToggleBtn');
+//   var panel     = document.getElementById('searchPanel');
+//   var closeBtn  = document.getElementById('searchPanelClose');
+//   var input     = document.getElementById('searchInput');
 
-  if (!toggleBtn || !panel) return;
+//   if (!toggleBtn || !panel) return;
 
-  function openSearch() {
-    panel.classList.add('open');
-    document.body.classList.add('search-open');
-    setTimeout(function () { if (input) input.focus(); }, 320);
-  }
+//   function openSearch() {
+//     panel.classList.add('open');
+//     document.body.classList.add('search-open');
+//     setTimeout(function () { if (input) input.focus(); }, 320);
+//   }
 
-  function closeSearch() {
-    panel.classList.remove('open');
-    document.body.classList.remove('search-open');
-  }
+//   function closeSearch() {
+//     panel.classList.remove('open');
+//     document.body.classList.remove('search-open');
+//   }
 
-  toggleBtn.addEventListener('click', function () {
-    panel.classList.contains('open') ? closeSearch() : openSearch();
-  });
+//   toggleBtn.addEventListener('click', function () {
+//     panel.classList.contains('open') ? closeSearch() : openSearch();
+//   });
 
-  if (closeBtn) closeBtn.addEventListener('click', closeSearch);
+//   if (closeBtn) closeBtn.addEventListener('click', closeSearch);
 
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeSearch();
-  });
-})();
-// ===== END SEARCH PANEL =====
-// ===== END SEARCH PANEL =====
-function setHeaderOffset() {
-  var header = document.querySelector('header');
-  var panel  = document.getElementById('searchPanel');
-  if (header) {
-    var h = header.offsetHeight;
-    document.body.style.paddingTop = h + 'px';
-    // if (panel) panel.style.top = h + 'px';
-  }
-}
+//   document.addEventListener('keydown', function (e) {
+//     if (e.key === 'Escape') closeSearch();
+//   });
+// })();
+// // ===== END SEARCH PANEL =====
+// // ===== END SEARCH PANEL =====
+// function setHeaderOffset() {
+//   var header = document.querySelector('header');
+//   var panel  = document.getElementById('searchPanel');
+//   if (header) {
+//     var h = header.offsetHeight;
+//     document.body.style.paddingTop = h + 'px';
+//     // if (panel) panel.style.top = h + 'px';
+//   }
+// }
 
-setHeaderOffset();
-window.addEventListener('resize', setHeaderOffset);
+// setHeaderOffset();
+// window.addEventListener('resize', setHeaderOffset);
 // search end
 function initTariffCarousel($el) {
   if ($el.hasClass("owl-loaded")) return;
