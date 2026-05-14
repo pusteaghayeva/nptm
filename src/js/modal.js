@@ -27,8 +27,7 @@ const tabs = document.querySelectorAll('.post-list-tab');
 const tabContents = {
     city:     document.getElementById('tabCity'),
     index:    document.getElementById('tabIndex'),
-    atm:      document.getElementById('tabAtm'),
-    smartpay: document.getElementById('tabSmartpay'),
+
 };
 
 tabs.forEach(tab => {
@@ -78,4 +77,3 @@ document.querySelectorAll('.accordion-header').forEach(header => {
     });
 });
 
-document.querySelector('.accordion-item').classList.add('open');
