@@ -1429,7 +1429,7 @@ body {
   font-size: 32px;
   color: var(--mainColor);
   font-weight: 600;
-  /* text-align: center; */
+  margin-bottom: 40px;
 }
 
 .postal-address-img {
@@ -1642,16 +1642,16 @@ body {
   display: flex;
   gap: 8px;
   align-items: center;
+  justify-content: space-around;
 }
 
 .post-map-filters select,
 .post-map-filters input,
 .post-map-filters button {
-  height: 52px;
-  border: 1px solid #d8dbe2;
-  background: #fff;
-  border-radius: 8px;
-  padding: 0 16px;
+  padding: 20px;
+  border: 1px solid rgba(24, 24, 24, 0.2);
+  background: var(--whiteColor);
+  border-radius: 4px;
 }
 
 .post-map-filters button {
@@ -1659,20 +1659,48 @@ body {
 }
 
 #searchPostOffice {
-  background: #ffd400;
-  border-color: #ffd400;
+  background: var(--mainColor);
+  border-color: var(--mainColor);
   font-weight: 600;
+  font-size: 16px;
+  padding: 30px;
 }
+
 
 #showList {
-  margin-left: auto;
-  color: #245cff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: var(--mainColor);
 }
 
+#showList i {
+    transition: transform 0.3s ease;
+}
+
+#showList:hover {
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+}
+
+#showList:hover i {
+    transform: translateX(5px);
+}
+#cityFilter:focus,
+#addressFilter:focus,
+#numberFilter:focus {
+    border-color: rgba(24, 24, 24, 0.2);
+    outline: none;
+}
+
+.post-map-input:focus-within {
+    border-color: #20277a;
+}
 .post-map-marker {
   width: 28px;
   height: 28px;
-  background: #ffd400;
+  background: var(--mainColor);
   border: 4px solid #fff;
   border-radius: 50%;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
@@ -1686,7 +1714,64 @@ body {
   background: #111;
   border-radius: 50%;
 }
+.map-search-btn {
+  height: 48px;
+  padding: 0 24px;
+  background: var(--mainColor);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--fontInter);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: opacity 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: 220px;
+}
+.map-search-btn i {
+  font-size: 24px;
+}
+.post-map-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 
+.post-map-input input {
+    padding-right: 40px; /* icon üçün yer */
+}
+
+.post-map-input i {
+    position: absolute;
+    right: 14px;
+    color: #888;
+    font-size: 16px;
+    pointer-events: none; /* klik inputa keçsin */
+}
+
+.post-map-input #numberFilter{
+  width: 124px;
+}
+.post-map-input #addressFilter{
+  width: 132px;
+}
+#cityFilter {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 36px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.post-map-input i{
+    color: var(--mainColor);
+
+}
 #postOfficeList {
   height: 600px;
   overflow-y: auto;
@@ -1703,12 +1788,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
-.post-map-input {
-  padding: 28px;
-}
+
 /* ssss */
 
 @media (min-width: 1200px) {
@@ -1867,6 +1952,7 @@ body {
     margin: 0 20px;
     font-size: 22px;
     text-align: center;
+    
   }
   .postal-address-img {
     width: 25px;

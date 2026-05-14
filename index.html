@@ -3448,32 +3448,34 @@
           <div class="post-map-section">
             <div class="post-map-filters">
               <div class="post-map-left">
-                <select id="cityFilter">
-                  <option value="">Şəhər / Rayon</option>
-                  <option value="{{ $city->id }}">Şəhər / Rayon</option>
-                </select>
                 <div class="post-map-input">
-                  <input
-                    type="text"
-                    id="addressFilter"
-                    placeholder="Ünvan və ya poçt kodu"
-                  />
+                  <select id="cityFilter">
+                    <option value="">Şəhər / Rayon</option>
+                    <option value="{{ $city->id }}">Şəhər / Rayon</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="post-map-input">
-                  <input
-                    type="text"
-                    id="numberFilter"
-                    placeholder="Nömrə"
-                  />
+                  <input type="text" id="addressFilter" placeholder="AZ1234" />
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="post-map-input">
+                  <input type="text" id="numberFilter" placeholder="Nömrə" />
                 </div>
 
-                <button type="button" id="searchPostOffice">
+                <button
+                  type="button"
+                  id="searchPostOffice"
+                  class="map-search-btn"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
                   AXTAR
                 </button>
               </div>
 
               <button type="button" id="showList">
-                @lang('translation.go-list')
+                Siyahıya keçid et
+                <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
             <div id="postOfficeMap"></div>

@@ -25,7 +25,6 @@
 }
 
 .joining_blog {
-  /* width: 300px; */
   height: 100%;
   padding: 20px;
   border-radius: 8px;
@@ -131,7 +130,7 @@
 }
 
 .joining_blog {
-  width: 100%; /* mövcud koduna əlavə et */
+  width: 100%;
 }
 @media (max-width: 992px) {
   .joining_card {
