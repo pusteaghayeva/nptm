@@ -3375,7 +3375,7 @@
         </div>
       </section>
 
-      <section class="closest-postal-address">
+      <!-- <section class="closest-postal-address">
         <h2 class="postal-address-title">
           <img
             src="./src/img/postal-address.png"
@@ -3397,13 +3397,11 @@
                     <option>Ordubad</option>
                     <option>Culfa</option>
                   </select>
-                  <!-- <i class="fa-solid fa-chevron-down "></i> -->
                   <i class="fa-solid fa-angle-down map-select-icon"></i>
                 </div>
 
                 <div class="map-input-wrap">
                   <input type="text" class="map-input" placeholder="AZ1234" />
-                  <!-- <i class="fa-solid fa-location-dot map-input-icon"></i> -->
                   <img src="./src/img/map_location.svg" alt="" />
                 </div>
 
@@ -3431,6 +3429,55 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="closest-postal-address">
+        <h2 class="postal-address-title">
+          <!-- <img src="{{asset('src/img/postal-address.png')}}" class="postal-address-img" alt=""/> -->
+          <!-- @lang('translation.close-post') -->
+          <img
+            src="./src/img/postal-address.png"
+            class="postal-address-img"
+            alt=""
+          />
+          Sizə ən yaxın poçt ünvanı
+        </h2>
+        <div class="container">
+          <div class="post-map-section">
+            <div class="post-map-filters">
+              <div class="post-map-left">
+                <select id="cityFilter">
+                  <option value="">Şəhər / Rayon</option>
+                  <option value="{{ $city->id }}">Şəhər / Rayon</option>
+                </select>
+                <div class="post-map-input">
+                  <input
+                    type="text"
+                    id="addressFilter"
+                    placeholder="Ünvan və ya poçt kodu"
+                  />
+                </div>
+                <div class="post-map-input">
+                  <input
+                    type="text"
+                    id="numberFilter"
+                    placeholder="Nömrə"
+                  />
+                </div>
+
+                <button type="button" id="searchPostOffice">
+                  AXTAR
+                </button>
+              </div>
+
+              <button type="button" id="showList">
+                @lang('translation.go-list')
+              </button>
+            </div>
+            <div id="postOfficeMap"></div>
+            <div id="postOfficeList" style="display: none"></div>
           </div>
         </div>
       </section>
@@ -3641,5 +3688,10 @@
     <!-- Map.js yalnız ana səhifəyə qoşulacaq. -->
     <script src="./src/js/map.js"></script>
     <script src="./src/js/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key={{ config('services.google.maps_key') }}&callback=initPostOfficeMap&v=weekly"
+      async
+      defer
+    ></script>
   </body>
 </html>

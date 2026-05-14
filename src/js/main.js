@@ -228,3 +228,7 @@ $('.news-carousel').owlCarousel({
 
 
 //calculate
+
+$('#cityFilter').select2({
+    width: '100%'
+});
