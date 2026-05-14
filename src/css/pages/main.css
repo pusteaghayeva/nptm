@@ -2023,6 +2023,16 @@ body {
 .streets-toggle {
   color: var(--menuColor);
 }
+.post-index-streets {
+    max-height: 72px; /* 3 sətir × 24px */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.post-index-streets.expanded {
+    max-height: 1000px;
+}
+
 .post-index-streets p {
   font-size: 14px;
   color: #444;

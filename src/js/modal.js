@@ -52,19 +52,29 @@ document.querySelectorAll('.streets-toggle').forEach(btn => {
         this.dataset.open = isOpen ? 'false' : 'true';
     });
 });
-
-document.querySelectorAll('.city-streets-toggle').forEach(btn => {
+document.querySelectorAll('.streets-toggle').forEach(btn => {
     btn.addEventListener('click', function(e) {
         e.preventDefault();
-        const item = this.closest('.post-list-city-item');
-        const streetsList = item.querySelector('.city-streets-list');
-        const isOpen = this.dataset.open === 'true';
+        const item = this.closest('.post-index-item');
+        const streets = item.querySelector('.post-index-streets');
+        const isOpen = streets.classList.contains('expanded');
 
-        streetsList.style.display = isOpen ? 'none' : 'block';
-        this.textContent = isOpen ? 'Ünvanları göstər' : 'Ünvanları gizlət';
-        this.dataset.open = isOpen ? 'false' : 'true';
+        streets.classList.toggle('expanded');
+        this.textContent = isOpen ? 'Küçələri göstər' : 'Küçələri gizlət';
     });
 });
+// document.querySelectorAll('.city-streets-toggle').forEach(btn => {
+//     btn.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         const item = this.closest('.post-list-city-item');
+//         const streetsList = item.querySelector('.city-streets-list');
+//         const isOpen = this.dataset.open === 'true';
+
+//         streetsList.style.display = isOpen ? 'none' : 'block';
+//         this.textContent = isOpen ? 'Ünvanları göstər' : 'Ünvanları gizlət';
+//         this.dataset.open = isOpen ? 'false' : 'true';
+//     });
+// });
 
 document.querySelectorAll('.accordion-header').forEach(header => {
     header.addEventListener('click', function() {
