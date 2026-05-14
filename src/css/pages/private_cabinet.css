@@ -1,0 +1,147 @@
+.private-cabinet-section {
+  margin-bottom: 60px;
+}
+
+.private-cabinet-title {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--fontInter);
+  width: 50%;
+}
+
+.private_contact_form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 40px 40px 32px;
+}
+
+/* .private_cabinet_register {
+  background-color: var(--mainColor);
+  padding: 20px 23px;
+  border: 1px solid var(--mainColor);
+  border-radius: 4px;
+  margin: 60px auto 30px;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--fontInter);
+  width: 220px;
+  color: var(--whiteColor);
+} */
+
+.private_cabinet_register {
+  background-color: var(--mainColor);
+  padding: 20px 23px;
+  border: 1px solid var(--mainColor);
+  border-radius: 4px;
+  margin: 60px auto 30px;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--fontInter);
+  width: 220px;
+  color: var(--whiteColor);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.private_cabinet_register::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.6s ease,
+    height 0.6s ease,
+    opacity 0.6s ease;
+  opacity: 1;
+}
+
+.private_cabinet_register:hover::after {
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+}
+
+.private-back {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--fontInter);
+  text-decoration: underline;
+  color: var(--mainColor);
+  text-align: right;
+  display: block;
+  transition:
+    letter-spacing 0.3s ease,
+    opacity 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.private-back::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--mainColor);
+  transition: width 0.3s ease;
+}
+
+.private-back:hover::after {
+  width: 20%;
+}
+
+.private_contact_form .password-wrapper {
+  position: relative;
+}
+
+.private_contact_form .password-wrapper input {
+  padding-right: 45px;
+}
+
+.private_contact_form .password-toggle {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: var(--callCenterBorder);
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle i {
+  color: var(--mainColor);
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .private-cabinet-title {
+    width: 100%;
+  }
+  .private_contact_form {
+    width: 100%;
+    padding: 20px;
+  }
+  .private_cabinet_register {
+    width: auto;
+    padding: 15px;
+    margin: 30px auto;
+    font-size: 18px;
+  }
+  .private-back {
+    font-size: 18px;
+  }
+}
