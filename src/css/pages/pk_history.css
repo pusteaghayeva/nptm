@@ -1,0 +1,82 @@
+.history_payment {
+  border-top: 1px solid rgba(34, 68, 156, 0.1);
+  padding: 80px 0;
+  margin: 60px 0;
+}
+
+.history-controls {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin: 32px 0 0;
+}
+
+.history-years-btn {
+  padding: 12px 20px;
+  background: rgba(76, 76, 76, 0.1);
+  border-radius: 4px;
+  border: none;
+  color: var(--callCenterBorder);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 205px;
+}
+
+.history-years-btn:hover {
+  background: rgba(32, 31, 148, 0.04);
+  color: var(--menuColor);
+}
+
+.history-select {
+  padding: 10px 36px 10px 14px;
+  border: none;
+  border-radius: 4px;
+  color: var(--menuColor);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--fontInter);
+  background-color: rgba(76, 76, 76, 0.05);
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2322449c' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-image: url("/src/img/chevron_down.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  cursor: pointer;
+  width: 115px;
+}
+
+.history-select:focus {
+  outline: none;
+  border-color: var(--mainColor);
+}
+
+.history_pk_flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.pk_history_card {
+  width: 60%;
+}
+.pk_payment_table td {
+  background-color: rgba(32, 31, 148, 0.04);
+  color: var(--menuColor);
+}
+
+@media(max-width:1400px){
+    .pk_history_card{
+        width: auto;
+    }
+}
+@media(max-width:768px){
+    .history_pk_flex{
+        flex-direction: column;
+    }
+    .pk_history_card{
+        width: auto;
+    }
+}
