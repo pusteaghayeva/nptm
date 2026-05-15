@@ -19,8 +19,9 @@
   font-size: 16px;
   font-weight: 400;
   color: var(--menuColor);
-  margin-top: 12px;
   width: 83%;
+    margin: 12px 0 40px;
+
 }
 
 .track_package_right {
@@ -56,17 +57,16 @@
   padding: 8px;
   border: 1px solid var(--mainColor);
   border-radius: 4px;
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 .track-package-form-control {
   border: none;
   outline: none;
   color: var(--mainColor);
-    font-weight: 16px;
-
+  font-weight: 16px;
 }
 .track-package-form-control::-webkit-search-cancel-button {
-    margin-left: 22px;
+  margin-left: 22px;
 }
 .track-package-form-control:focus {
   border: none;
@@ -87,7 +87,7 @@
 .track_package_btn:hover {
   background-color: transparent;
   border: 1px solid var(--mainColor);
-  color: var(--mainColor); 
+  color: var(--mainColor);
 }
 .track_package_btn {
   width: 116px;
@@ -127,7 +127,7 @@
   .track_package_right {
     height: auto;
   }
-    .track_package_img{
+  .track_package_img {
     height: auto;
   }
 }
@@ -143,11 +143,12 @@
   .track_package_text {
     width: auto;
     font-size: 15px;
+    margin: 12px 0 20px;
   }
   .track-package-form {
     width: 100%;
     height: auto;
-    margin: 20px 0;
+    margin: 30px 0;
   }
   .track-package-form-control::placeholder {
     font-size: 12px;
@@ -159,6 +160,4 @@
   .track_package_right {
     height: auto;
   }
-
 }
-
