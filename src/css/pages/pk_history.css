@@ -67,16 +67,36 @@
   color: var(--menuColor);
 }
 
-@media(max-width:1400px){
-    .pk_history_card{
-        width: auto;
-    }
+.ph_history_private_cabinet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-@media(max-width:768px){
-    .history_pk_flex{
-        flex-direction: column;
-    }
-    .pk_history_card{
-        width: auto;
-    }
+.person-name{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--mainColor);
+    margin: 0 4px;
+}
+
+.person-code{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+@media (max-width: 1400px) {
+  .pk_history_card {
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .history_pk_flex {
+    flex-direction: column;
+  }
+  .pk_history_card {
+    width: auto;
+  }
 }
