@@ -25,6 +25,8 @@
 }
 
 .joining_blog {
+  width: 434px;
+  margin: 0 auto;
   height: 100%;
   padding: 20px;
   border-radius: 8px;
@@ -126,12 +128,12 @@
 
 .joining_blog {
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
 }
 
-.joining_blog {
+/* .joining_blog {
   width: 100%;
-}
+} */
 @media (max-width: 992px) {
   .joining_card {
     width: 90%;

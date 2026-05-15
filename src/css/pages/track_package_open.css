@@ -1,0 +1,47 @@
+.track_package {
+  background-color: yellow;
+  margin: 40px 0;
+}
+
+.track_package_left {
+}
+
+.track_package_title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--fontInter);
+}
+
+.track_package_text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--menuColor);
+  margin: 12px 0 40px;
+}
+
+.track_package_right {
+  width: 450px;
+  height: 396px;
+  margin-left: auto;
+}
+
+.track_package_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.track_package_bg {
+  background-color: rgba(34, 68, 156, 0.05);
+  border-radius: 4px;
+  padding: 20px;
+  width: 469px;
+}
+
+.track_package_id {
+  border: 1px solid var(--mainColor);
+  padding: 8px ;
+  border-radius: 4px;
+  width: 196px;
+  text-align: center;
+}
