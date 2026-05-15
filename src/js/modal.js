@@ -1,12 +1,72 @@
-const showListBtn  = document.getElementById('showList');
-const drawer       = document.getElementById('postListDrawer');
-const overlay      = document.getElementById('postListOverlay');
-const closeBtn     = document.getElementById('postListClose');
+const showListBtn = document.getElementById('showList');
+const drawer      = document.getElementById('postListDrawer');
+const overlay     = document.getElementById('postListOverlay');
+const closeBtn    = document.getElementById('postListClose');
 
+
+function initStreetToggles() {
+    const tabIndex = document.getElementById('tabIndex');
+    const wasHidden = tabIndex.style.display === 'none';
+    if (wasHidden) {
+        tabIndex.style.visibility = 'hidden';
+        tabIndex.style.position = 'absolute';
+        tabIndex.style.display = 'block';
+    }
+
+    document.querySelectorAll('.post-index-item').forEach(item => {
+        const streets = item.querySelector('.post-index-streets');
+        const toggle  = item.querySelector('.streets-toggle');
+
+        if (!streets || !toggle) return;
+        if (toggle.dataset.initialized) return;
+
+        streets.style.maxHeight = 'none';
+        const fullHeight = streets.scrollHeight;
+        streets.style.maxHeight = '72px';
+
+        if (fullHeight <= 72) {
+            toggle.style.display = 'none';
+        } else {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                const isOpen = streets.classList.contains('expanded');
+
+                if (isOpen) {
+                    streets.style.maxHeight = streets.scrollHeight + 'px';
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(() => {
+                            streets.style.maxHeight = '72px';
+                        });
+                    });
+                    streets.classList.remove('expanded');
+                } else {
+                    streets.style.maxHeight = 'none';
+                    const h = streets.scrollHeight;
+                    streets.style.maxHeight = '72px';
+                    requestAnimationFrame(() => {
+                        streets.style.maxHeight = h + 'px';
+                        streets.classList.add('expanded');
+                    });
+                }
+
+                this.textContent = isOpen ? 'Küçələri göstər' : 'Küçələri gizlət';
+            });
+        }
+
+        toggle.dataset.initialized = 'true';
+    });
+
+    if (wasHidden) {
+        tabIndex.style.display = 'none';
+        tabIndex.style.visibility = '';
+        tabIndex.style.position = '';
+    }
+}
 function openDrawer() {
     drawer.classList.add('active');
     overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
+    initStreetToggles();
 }
 
 function closeDrawer() {
@@ -25,9 +85,8 @@ document.addEventListener('keydown', e => {
 
 const tabs = document.querySelectorAll('.post-list-tab');
 const tabContents = {
-    city:     document.getElementById('tabCity'),
-    index:    document.getElementById('tabIndex'),
-
+    city:  document.getElementById('tabCity'),
+    index: document.getElementById('tabIndex'),
 };
 
 tabs.forEach(tab => {
@@ -36,49 +95,16 @@ tabs.forEach(tab => {
         tab.classList.add('active');
         Object.values(tabContents).forEach(c => c.style.display = 'none');
         tabContents[tab.dataset.tab].style.display = 'block';
+
+        if (tab.dataset.tab === 'index') {
+            initStreetToggles();
+        }
     });
 });
-
-// tab index
-document.querySelectorAll('.streets-toggle').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        const item = this.closest('.post-index-item');
-        const hidden = item.querySelectorAll('.streets-hidden');
-        const isOpen = this.dataset.open === 'true';
-
-        hidden.forEach(el => el.style.display = isOpen ? 'none' : 'block');
-        this.textContent = isOpen ? 'Küçələri göstər' : 'Küçələri gizlət';
-        this.dataset.open = isOpen ? 'false' : 'true';
-    });
-});
-document.querySelectorAll('.streets-toggle').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        const item = this.closest('.post-index-item');
-        const streets = item.querySelector('.post-index-streets');
-        const isOpen = streets.classList.contains('expanded');
-
-        streets.classList.toggle('expanded');
-        this.textContent = isOpen ? 'Küçələri göstər' : 'Küçələri gizlət';
-    });
-});
-// document.querySelectorAll('.city-streets-toggle').forEach(btn => {
-//     btn.addEventListener('click', function(e) {
-//         e.preventDefault();
-//         const item = this.closest('.post-list-city-item');
-//         const streetsList = item.querySelector('.city-streets-list');
-//         const isOpen = this.dataset.open === 'true';
-
-//         streetsList.style.display = isOpen ? 'none' : 'block';
-//         this.textContent = isOpen ? 'Ünvanları göstər' : 'Ünvanları gizlət';
-//         this.dataset.open = isOpen ? 'false' : 'true';
-//     });
-// });
 
 document.querySelectorAll('.accordion-header').forEach(header => {
     header.addEventListener('click', function() {
-        const item = this.closest('.accordion-item');
+        const item   = this.closest('.accordion-item');
         const isOpen = item.classList.contains('open');
 
         document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('open'));
@@ -86,4 +112,3 @@ document.querySelectorAll('.accordion-header').forEach(header => {
         if (!isOpen) item.classList.add('open');
     });
 });
-

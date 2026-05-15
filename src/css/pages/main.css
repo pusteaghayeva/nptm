@@ -2061,22 +2061,22 @@ body {
 .streets-toggle {
   color: var(--menuColor);
 }
-
 .post-index-streets {
   max-height: 72px;
-  /* 3 sətir × 24px */
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.35s ease;
 }
-
 .post-index-streets.expanded {
-  max-height: 1000px;
+  /* max-height: 2000px; */
+  overflow: hidden;
+  /* transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1); */
 }
-
 .post-index-streets p {
   font-size: 14px;
   color: #444;
   line-height: 1.8;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .city-streets-list {
@@ -2182,7 +2182,23 @@ body {
   padding-right: 0;
   border-right: none;
 }
+.post-index-btn {
+    display: block;
+    background-color: #f1f5f7;
+    margin: 30px auto;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--mainColor);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
 
+.post-index-btn:hover {
+    background-color: var(--modalBg);
+    color: var(--menuColor);
+}
 /* Mobile */
 @media (max-width: 480px) {
   .post-list-drawer {
