@@ -1,0 +1,17 @@
+.post_oficces{
+    margin: 40px 0;
+}
+
+.post_office_flex{
+    padding: 0;
+}
+
+.post-office-list-desc{
+    width: 70%;
+}
+
+@media(max-width:768px){
+    .post-office-list-desc{
+width: 100%;
+    }
+}
