@@ -1,4 +1,3 @@
-// ===== SEARCH PANEL =====
 (function () {
   var toggleBtn = document.getElementById('searchToggleBtn');
   var panel     = document.getElementById('searchPanel');
@@ -28,7 +27,6 @@
     if (e.key === 'Escape') closeSearch();
   });
 })();
-// ===== END SEARCH PANEL =====
 function setHeaderOffset() {
   var header = document.querySelector('header');
   var panel  = document.getElementById('searchPanel');
@@ -41,7 +39,6 @@ function setHeaderOffset() {
 
 setHeaderOffset();
 window.addEventListener('resize', setHeaderOffset);
-// search end
 function initTariffCarousel($el) {
   if ($el.hasClass("owl-loaded")) return;
 
@@ -129,45 +126,6 @@ $('.news-carousel').owlCarousel({
     }
   }
 });
-// $('.news-carousel').owlCarousel({
-//   loop: true,
-//   nav: false,
-//   dots: false,
-//   smartSpeed: 700,
-//   autoplay: false,
-//   autoplayHoverPause: true,
-//   autoHeight: false,
-//   mouseDrag: true,
-//   touchDrag: true,
-//   pullDrag: true,
-//   responsive: {
-//     0: {
-//       items: 1,
-//       autoWidth: false,
-//       margin: 16,
-//       stagePadding: 0
-//     },
-//     768: {
-//       items: 2,
-//       autoWidth: false,
-//       margin: 20,
-//       stagePadding: 0
-//     },
-//         992: {
-//       items: 3,
-//       autoWidth: false,
-//       margin: 20,
-//       stagePadding: 0
-//     },
-//     1200: {
-//       autoWidth: true,
-//       margin: 18,
-//       stagePadding: 0
-//     }
-//   }
-// });
-
-// back to top
 (function ($) {
   "use strict";
 
@@ -224,7 +182,3 @@ $('.news-carousel').owlCarousel({
 
 })(jQuery);
 
-
-//calculate
-
-// ssss
