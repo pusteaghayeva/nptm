@@ -73,8 +73,6 @@
 
 .gpon-field__label {
   position: absolute;
-  /* top: 6px;
-    left: 14px; */
   top: 8px;
   left: 16px;
   z-index: 5;
@@ -206,15 +204,12 @@
   outline: 1px solid var(--recaptchaBg);
   outline-offset: 2px;
 }
-
-/* Select2 */
 .select2-container {
   width: 100% !important;
 }
 
 .gpon-field .select2-container--default .select2-selection--single {
   position: relative;
-  /* height: 50px; */
   height: auto;
   background-color: red;
   border: 1px solid var(--recaptchaBg);

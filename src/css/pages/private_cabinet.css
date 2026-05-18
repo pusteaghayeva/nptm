@@ -20,7 +20,7 @@
   padding: 20px 23px;
   border: 1px solid var(--mainColor);
   border-radius: 4px;
-  margin: 60px auto 30px;
+  margin: 30px auto;
   display: block;
   font-size: 20px;
   font-weight: 600;
@@ -60,10 +60,15 @@
   font-size: 20px;
   font-weight: 600;
   font-family: var(--fontInter);
+  text-decoration: underline;
   color: var(--mainColor);
+  text-align: right;
   display: block;
   width: fit-content;
   margin-left: auto;
+  transition:
+    letter-spacing 0.3s ease,
+    opacity 0.3s ease;
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
@@ -73,7 +78,6 @@
   content: "";
   position: absolute;
   bottom: -2px;
-  left: 0;
   right: 0;
   width: 0;
   height: 2px;
@@ -84,6 +88,7 @@
 .private-back:hover::after {
   width: 100%;
 }
+
 .private_contact_form .password-wrapper {
   position: relative;
 }
@@ -111,6 +116,99 @@
   font-size: 18px;
 }
 
+.password-rule {
+  color: var(--menuColor);
+  font-family: var(--fontInter);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: -8px 0 18px;
+}
+
+.private-remember {
+  align-items: center;
+  color: var(--menuColor);
+  display: flex;
+  font-family: var(--fontInter);
+  font-size: 15px;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.private-link-button {
+  background: transparent;
+  border: 0;
+  color: var(--mainColor);
+  cursor: pointer;
+  font-family: var(--fontInter);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.private-resend-form {
+  margin: 18px auto 0;
+  text-align: center;
+  width: 50%;
+}
+
+.private-profile {
+  display: grid;
+  gap: 16px;
+  margin: 28px 0;
+  max-width: 620px;
+}
+
+.private-profile div {
+  border-bottom: 1px solid var(--callCenterBorder);
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.private-profile span {
+  color: var(--menuColor);
+  font-family: var(--fontInter);
+}
+
+.private-profile strong {
+  color: var(--mainColor);
+  font-family: var(--fontInter);
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .private-cabinet-title {
+    width: 100%;
+  }
+
+  .private_contact_form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .private-resend-form {
+    width: 100%;
+  }
+
+  .private_cabinet_register {
+    width: auto;
+    padding: 15px;
+    margin: 30px auto;
+    font-size: 18px;
+  }
+
+  .private-back {
+    font-size: 18px;
+  }
+
+  .private-profile div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
 .pw-strength-bar {
   height: 4px;
   background: #e0e4ef;
@@ -135,6 +233,7 @@
   display: flex;
   flex-direction: column;
   gap: 3px;
+  margin-bottom: 24px;
 }
 .pw-rule {
   font-size: 12px;
@@ -160,45 +259,4 @@
 }
 .pw-match-msg.fail {
   color: #e24b4a;
-}
-@media (max-width: 768px) {
-  .private-cabinet-title {
-    width: 100%;
-  }
-  .private_contact_form {
-    width: 100%;
-    padding: 20px;
-  }
-  .private_cabinet_register {
-    width: auto;
-    padding: 15px;
-    margin: 30px auto;
-    font-size: 18px;
-  }
-  .private-back {
-    font-size: 18px;
-  }
-}
-.input-icon-wrap {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.input-icon-wrap input {
-  width: 100%;
-  padding-right: 45px;
-}
-
-.input-icon-wrap .password-toggle {
-  position: absolute;
-  right: 14px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
 }

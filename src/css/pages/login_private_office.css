@@ -20,12 +20,6 @@
   color: var(--mainColor);
 }
 
-/* .forgot-password{
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--titleFlexColor);
-    text-decoration: underline;
-} */
 .forgot-password {
   font-size: 20px;
   font-weight: 400;

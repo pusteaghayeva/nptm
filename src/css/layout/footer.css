@@ -209,7 +209,6 @@ footer {
     justify-content: space-between;
   }
 
-
   .footer-contact {
     flex-wrap: wrap;
     gap: 24px 40px;
@@ -328,4 +327,9 @@ footer {
   .call_center_number span {
     font-size: 15px;
   }
+}
+
+footer {
+  position: relative;
+  z-index: 1;
 }

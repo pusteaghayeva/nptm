@@ -145,3 +145,11 @@
     height: auto;
   }
 }
+
+
+@media(max-width: 768px){
+  .joining_blog{
+    width: auto;
+    
+  }
+}
