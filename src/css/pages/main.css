@@ -383,7 +383,7 @@ body {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  color: red;
+  /* color: red; */
   pointer-events: none;
   font-size: 18px;
 }

@@ -1765,16 +1765,17 @@ body.search-open header {
 /* ===== 992–1290px ===== */
 @media (min-width: 992px) and (max-width: 1290px) {
   .header-inner {
-    padding: 18px 28px;
+    padding: 0 28px;
     gap: 16px;
   }
 
-  .logo-flex {
+  /* .logo-flex {
     flex: 0 1 320px;
-  }
+  } */
 
   .logo-img {
-    width: 50px;
+    /* width: 50px; */
+    width: auto;
     height: 50px;
   }
 
@@ -1787,6 +1788,9 @@ body.search-open header {
 
   .header-right-zone {
     gap: 12px;
+  }
+  .header-bottom-row {
+    margin: 0;
   }
 
   .navbar-nav {
@@ -1813,6 +1817,9 @@ body.search-open header {
   .call-number {
     font-size: 13px;
   }
+}
+.private-cabinet-btn.mobile-only {
+  display: none;
 }
 
 /* ===== 1480px search ===== */
@@ -1871,7 +1878,7 @@ body.search-open header {
 }
 
 /* ===== max-width: 991.98px ===== */
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   body {
     padding-top: 84px;
   }
@@ -2099,18 +2106,281 @@ body.search-open header {
   .search-panel-inner {
     padding: 0 20px;
   }
-}
+} */
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 68px;
+  }
 
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 16px;
+    min-height: 68px;
+    gap: 12px;
+  }
+  .navbar-nav .nav-link.active {
+    padding-left: 0;
+  }
+  .nav-link-img {
+    margin-right: 5px;
+  }
+
+  .logo-flex {
+    flex: none;
+    min-width: 0;
+    /* background-color: red; */
+  }
+
+  .logo-img {
+    /* width: 44px; */
+    width: auto;
+    height: 44px;
+    flex-shrink: 0;
+  }
+
+  .logo_name {
+    width: 130px;
+    height: auto;
+  }
+
+  .header-right-zone {
+    flex-direction: row;
+    align-items: center;
+    flex: 0 0 auto;
+    gap: 8px;
+  }
+
+  /* Desktop Şəxsi kabinet sırası gizlənir */
+  .header-top-row {
+    display: none;
+  }
+
+  .header-bottom-row {
+    display: flex;
+    align-items: center;
+    /* gap: 8px; */
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Desktop navbar, dil, zəng gizlənir —
+     bunlar artıq hamburger içində olacaq */
+  .navbar-div .lang,
+  .call-center,
+  .header-actions {
+    display: none;
+  }
+
+  /* Hamburger düyməsi görünür qalır */
+  .btn-navbar-toggler {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-toggler-icon {
+    width: 24px;
+    height: 18px;
+    background-image: none !important;
+    position: relative;
+    display: inline-block;
+    border-top: 2px solid var(--mainColor);
+  }
+
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: var(--mainColor);
+    border-radius: 2px;
+  }
+
+  .navbar-toggler-icon::before {
+    top: 7px;
+  }
+  .navbar-toggler-icon::after {
+    top: 16px;
+  }
+
+  /* Axtarış düyməsi görünür */
+  .search-toggle-btn {
+    display: inline-flex;
+    margin-right: 0;
+  }
+  .search-toggle-btn i {
+    color: var(--mainColor);
+  }
+
+  /* ── Açılan menyu (navbar-collapse) ── */
+  .navbar-collapse {
+    position: fixed;
+    top: 68px; /* header hündürlüyünə bərabər */
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--whiteColor);
+    overflow-y: auto;
+    max-height: calc(100vh - 68px);
+    z-index: 999;
+    padding: 0;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0 20px;
+    background-color: var(--dropdownBg);
+  }
+
+  .navbar-nav .nav-item {
+    border-bottom: 1px solid var(--menuBorder);
+    border-left: none;
+    border-right: none;
+    padding: 0;
+  }
+
+  .navbar-nav .nav-item + .nav-item {
+    border-left: none;
+  }
+
+  .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+    border-right: none;
+  }
+
+  .navbar-nav .nav-link {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 15px;
+    gap: 0;
+    justify-content: flex-start;
+  }
+
+  .navbar-nav .nav-item.dropdown > .nav-link::after {
+    content: "\f054";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 11px;
+    color: var(--mainColor);
+    margin-left: auto;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    min-width: 100%;
+    margin: 0 0 12px 0;
+    padding: 6px 0 6px 18px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    display: none;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  .navbar-nav .dropdown-menu.show {
+    display: block;
+  }
+
+  /* ── Hamburger altındakı dil + zəng sırası ── */
+  .mobile-menu-extras {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-menu-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--dropdownBorder);
+    background: var(--dropdownBg);
+    overflow: hidden;
+  }
+
+  .mobile-lang-link,
+  .mobile-call-link {
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--callCenterBorder);
+    text-decoration: none;
+    border-right: 1px solid var(--dropdownBorder);
+    font-size: 14px;
+    font-weight: 500;
+    gap: 10px;
+  }
+
+  .mobile-menu-top > *:last-child {
+    border-right: none;
+  }
+
+  /* ── Hamburger altında Şəxsi kabinet sırası ── */
+  .mobile-cabinet-row {
+    display: flex;
+    border-top: 1px solid var(--dropdownBorder);
+    background: var(--dropdownBg);
+  }
+
+  .mobile-cabinet-link {
+    width: 100%;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--mainColor);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-top: 1px solid var(--dropdownBorder);
+  }
+
+  .private-cabinet-btn.mobile-only {
+    display: inline-flex;
+    height: 32px;
+    padding: 0 10px;
+    font-size: 12px;
+    order: 1;
+  }
+
+  /* Hamburger düyməsi */
+  .btn-navbar-toggler {
+    order: 3;
+  }
+}
 /* ===== max-width: 567px ===== */
 @media (max-width: 567px) {
   .header-inner {
     padding: 14px 12px;
     gap: 8px;
   }
+  .navbar-nav .nav-link.active {
+    padding-left: 0;
+  }
+  .nav-link-img {
+    margin-right: 5px;
+  }
 
-  .logo-name {
+  /* .logo-name {
     margin-left: 8px;
     max-width: 200px;
+  } */
+  .logo_name {
+    /* width: 130px;
+    height: auto; */
+    display: none;
   }
 
   .search-panel-inner {
@@ -2120,5 +2390,8 @@ body.search-open header {
   .search-panel-submit {
     padding: 0 14px;
     font-size: 13px;
+  }
+  .search-toggle-btn i {
+    color: var(--mainColor);
   }
 }
