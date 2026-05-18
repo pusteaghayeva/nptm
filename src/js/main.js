@@ -227,3 +227,4 @@ $('.news-carousel').owlCarousel({
 
 //calculate
 
+// ssss
