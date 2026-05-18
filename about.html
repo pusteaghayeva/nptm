@@ -20,6 +20,18 @@
   </head>
 
   <body>
+    <canvas
+      id="nptm-net"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+      "
+    ></canvas>
     <header>
       <div class="container-fluid px-0">
         <div class="header-inner">
@@ -410,187 +422,173 @@
           ></path>
         </svg>
       </div>
-        <section class="about">
-            <div class="container">
-                <div class="title-flex">
-                    <a href="http://nmincom.asdfghjkl.gov.az" class="title-first level-1">Ana səhifə</a>
+      <section class="about">
+        <div class="container">
+          <div class="title-flex">
+            <a
+              href="http://nmincom.asdfghjkl.gov.az"
+              class="title-first level-1"
+              >Ana səhifə</a
+            >
 
-                    <span><i class="fa-solid fa-angle-right"></i></span>
-                    <span class="title-first level-4">Haqqımızda</span>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+            <span class="title-first level-4">Haqqımızda</span>
+          </div>
+
+          <div class="about-main-title">Haqqımızda</div>
+          <div class="container">
+            <div class="about-main-flex">
+              <div class="about-flex">
+                <div class="about-left">
+                  <img
+                    src="./src/img/about_logo.png"
+                    alt="sent-img"
+                    class="about-left-img"
+                  />
                 </div>
 
-                <div class="about-main-title">
-                    Haqqımızda
+                <div class="about-right">
+                  Naxçıvan Muxtar Respublikası Rəqəmsal İnkişaf və Nəqliyyat
+                  Nazirliyinin tabeliyində “Naxçıvan Poçt və Telekommunikasiya
+                  Mərkəzi” Məhdud Məsuliyyətli Cəmiyyəti Naxçıvan Muxtar
+                  Respublikası Ali Məclisi sədrinin 2025-ci il 17 dekabr tarixli
+                  Fərmanına əsasən Nazirliyin tabeliyində olan “Naxçıvanpoçt” 
+                  və “Naxçıvan Telekom” MMC-lər, o cümlədən “Naxçıvan Muxtar
+                  Respublikası Radio-Televiziya Ötürücü Mərkəzi” Publik Hüquqi
+                  Şəxs birləşdirilməklə yaradılıb. Mərkəzin əsas məqsədi poçt və
+                  telekommunikasiya sahəsində mövcud resursların vahid idarəetmə
+                  altında birləşdirilməsi, idarəetmədə çevikliyin artırılması,
+                  xərclərin optimallaşdırılması, texniki və insan resurslarından
+                  səmərəli istifadə, eləcə də müasir xidmət modellərinin
+                  tətbiqidir. Bu struktur vasitəsilə poçt rabitəsi, internet və
+                  digər rəqəmsal xidmətlər üzrə planlaşdırma, istismar, inkişaf
+                  və nəzarət funksiyalarının koordinasiyalı şəkildə həyata
+                  keçirilməsi nəzərdə tutulur. Mərkəzin fəaliyyət istiqamətləri
+                  sırasında poçt və telekommunikasiya infrastrukturunun
+                  modernləşdirilməsi, fiber-optik və rəqəmsal şəbəkələrin
+                  genişləndirilməsi, xidmət keyfiyyətinin beynəlxalq
+                  standartlara uyğunlaşdırılması, elektron xidmətlərin tətbiqi,
+                  vahid texniki standartların formalaşdırılması, kadr
+                  potensialının gücləndirilməsi əsas prioritetlər kimi müəyyən
+                  edilib.
                 </div>
-                <div class="container">
-                    <div class="about-main-flex">
-                        <div class="about-flex">
-                            <div class="about-left">
-                                <img src="./src/img/about_logo.png" alt="sent-img" class="about-left-img">
-                            </div>
-
-                            <div class="about-right">
-                                Naxçıvan Muxtar Respublikası Rəqəmsal İnkişaf və Nəqliyyat Nazirliyinin tabeliyində
-                                “Naxçıvan Poçt və Telekommunikasiya Mərkəzi” Məhdud Məsuliyyətli Cəmiyyəti Naxçıvan
-                                Muxtar
-                                Respublikası Ali Məclisi sədrinin 2025-ci il 17 dekabr tarixli Fərmanına əsasən
-                                Nazirliyin
-                                tabeliyində olan “Naxçıvanpoçt”  və “Naxçıvan Telekom” MMC-lər, o cümlədən “Naxçıvan
-                                Muxtar
-                                Respublikası Radio-Televiziya Ötürücü Mərkəzi” Publik Hüquqi Şəxs birləşdirilməklə
-                                yaradılıb.
-
-                                Mərkəzin əsas məqsədi poçt və telekommunikasiya sahəsində mövcud resursların vahid
-                                idarəetmə
-                                altında birləşdirilməsi, idarəetmədə çevikliyin artırılması, xərclərin
-                                optimallaşdırılması,
-                                texniki və insan resurslarından səmərəli istifadə, eləcə də müasir xidmət modellərinin
-                                tətbiqidir. Bu struktur vasitəsilə poçt rabitəsi, internet və digər rəqəmsal xidmətlər
-                                üzrə
-                                planlaşdırma, istismar, inkişaf və nəzarət funksiyalarının koordinasiyalı şəkildə həyata
-                                keçirilməsi nəzərdə tutulur.
-
-                                Mərkəzin fəaliyyət istiqamətləri sırasında poçt və telekommunikasiya infrastrukturunun
-                                modernləşdirilməsi, fiber-optik və rəqəmsal şəbəkələrin genişləndirilməsi, xidmət
-                                keyfiyyətinin beynəlxalq standartlara uyğunlaşdırılması, elektron xidmətlərin tətbiqi,
-                                vahid
-                                texniki standartların formalaşdırılması, kadr potensialının gücləndirilməsi əsas
-                                prioritetlər kimi müəyyən edilib.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+              </div>
             </div>
-
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
-
-
     <footer>
-        <div class="container">
-            <h2 class="footer-name">Naxçıvan Poçt və Telekommunikasiya Mərkəzi MMC</h2>
+      <div class="container">
+        <h2 class="footer-name">
+          Naxçıvan Poçt və Telekommunikasiya Mərkəzi MMC
+        </h2>
 
-            <div class="footer-button">
-                <div class="footer-btn-left">
-                    <a href="./tarrifs.html" class="footer-btn-nav">Tariflər</a>
-                    <a href="./campaigns.html" class="footer-btn-nav">Kampaniyalar</a>
-                    <a href="./contact.htm" class="footer-btn-nav">Dəstək</a>
-                </div>
-                <div class="footer-btn-right">
-                    <p>
-                        Bizi sosial şəbəkələrdə izləyin!
-
-                    </p>
-                    <ul class="footer-social-ul">
-                        <li>
-                            <a href="">
-                                <img src="./src/img/footer_instagram.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./src/img/footer_facebook.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="footer-contact">
-                <div class="footer-nav">
-                    <ul>
-                        <li>
-                            <a href="">Vakansiya</a>
-                        </li>
-                        <li>
-                            <a href="./news.html">Xəbərlər</a>
-                        </li>
-                        <li>
-                            <a href="">Media</a>
-                        </li>
-                        <li>
-                            <a href="">FAQ</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="footer-address">
-                    <div class="footer-location">
-                        <img src="./src/img/location_on.png" alt="">
-                        <p class="footer_phone_number">
-                            Naxçıvan şəhəri, Atatürk küçəsi 1
-                        </p>
-                    </div>
-                    <div class="footer-location">
-                        <img src="./src/img/phone_call.png" alt="">
-                        <div class="footer_phone_call">
-                            <a href="" tel="" class="footer_phone_number">
-                                (+994 36) 544 02 01
-                            </a>
-                            <a href="" tel="" class="footer_phone_number">
-                                (+994 36) 544 02 02
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="call_center">
-                    <div class="footer-location">
-
-                        <p class="footer_phone_number">
-                            Çağrı mərkəzi
-                        </p>
-                        <a href="tel:*209" class="call_center_number">
-                            <img src="./src/img/call_center.png" alt="">
-                            <span>*209</span>
-                        </a>
-
-                    </div>
-                    <div class="footer-location">
-
-                        <p class="footer_phone_number">
-                            Bizə yaz!
-                        </p>
-                        <a href="mailto:office@ntelekom.gov.az" class="call_center_number">
-                            <span>office@ntelekom.gov.az</span>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-copyright">
-                <p class="copyright-text">
-                    Bütün hüquqlar qorunur © 2026 
-                </p>
-
-                <div class="copyright-company">
-                    Sayt  <a href="" class="copyright-link">
-                        Naxçıvan Poçt və Telekommunikasiya Mərkəzi MMC 
-                    </a>tərəfindən hazırlanmışdır
-                </div>
-
-            </div>
-
+        <div class="footer-button">
+          <div class="footer-btn-left">
+            <a href="./tarrifs.html" class="footer-btn-nav">Tariflər</a>
+            <a href="./campaigns.html" class="footer-btn-nav">Kampaniyalar</a>
+            <a href="./contact.htm" class="footer-btn-nav">Dəstək</a>
+          </div>
+          <div class="footer-btn-right">
+            <p>Bizi sosial şəbəkələrdə izləyin!</p>
+            <ul class="footer-social-ul">
+              <li>
+                <a href="">
+                  <img src="./src/img/footer_instagram.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./src/img/footer_facebook.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div class="footer-contact">
+          <div class="footer-nav">
+            <ul>
+              <li>
+                <a href="">Vakansiya</a>
+              </li>
+              <li>
+                <a href="./news.html">Xəbərlər</a>
+              </li>
+              <li>
+                <a href="">Media</a>
+              </li>
+              <li>
+                <a href="">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-address">
+            <div class="footer-location">
+              <img src="./src/img/location_on.png" alt="" />
+              <p class="footer_phone_number">
+                Naxçıvan şəhəri, Atatürk küçəsi 1
+              </p>
+            </div>
+            <div class="footer-location">
+              <img src="./src/img/phone_call.png" alt="" />
+              <div class="footer_phone_call">
+                <a href="" tel="" class="footer_phone_number">
+                  (+994 36) 544 02 01
+                </a>
+                <a href="" tel="" class="footer_phone_number">
+                  (+994 36) 544 02 02
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="call_center">
+            <div class="footer-location">
+              <p class="footer_phone_number">Çağrı mərkəzi</p>
+              <a href="tel:*209" class="call_center_number">
+                <img src="./src/img/call_center.png" alt="" />
+                <span>*209</span>
+              </a>
+            </div>
+            <div class="footer-location">
+              <p class="footer_phone_number">Bizə yaz!</p>
+              <a
+                href="mailto:office@ntelekom.gov.az"
+                class="call_center_number"
+              >
+                <span>office@ntelekom.gov.az</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <p class="copyright-text">Bütün hüquqlar qorunur © 2026 </p>
+
+          <div class="copyright-company">
+            Sayt 
+            <a href="" class="copyright-link">
+              Naxçıvan Poçt və Telekommunikasiya Mərkəzi MMC  </a
+            >tərəfindən hazırlanmışdır
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Whelp Widget Code -->
     <script src="https://widget.whelp.co/app.js"></script>
     <script type="text/javascript">
-        Whelp("init", {
-            app_id: "c3b5c6fedc73dcee3976ddfa86a25867"
-        });
+      Whelp("init", {
+        app_id: "c3b5c6fedc73dcee3976ddfa86a25867",
+      });
     </script>
     <!-- Whelp Widget Code -->
     <script src="./src/js/jquery.min.js"></script>
     <script src="./src/js/bootstrap.bundle.js"></script>
     <script src="./src/js/owl.carousel.min.js"></script>
     <script src="./src/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

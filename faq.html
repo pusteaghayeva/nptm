@@ -20,6 +20,18 @@
   </head>
 
   <body>
+    <canvas
+      id="nptm-net"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+      "
+    ></canvas>
     <header>
       <div class="container-fluid px-0">
         <div class="header-inner">
@@ -410,211 +422,212 @@
           ></path>
         </svg>
       </div>
-        <section class="section-vacancies">
-            <div class="container">
-                <div class="title-flex">
-                    <span><i class="fa-solid fa-angle-left"></i></span>
-                    <a href="#" class="title-first level-2">Geri</a>
-                </div>
-                <div class="vacancy_form_title">
-                    <h3 class="vacancy_form_name faq-main-title">
-                        Tez-tez verilən suallar
-                    </h3>
-                    <p class="vacancy_form_text">
-                        Tez-tez verilən suallara burada cavab tapa bilərsiniz. Əlavə suallarınız olarsa, əlaqə
-                        bölməsindən bizimlə əlaqə saxlaya bilərsiniz.
-                    </p>
-                </div>
+      <section class="section-vacancies">
+        <div class="container">
+          <div class="title-flex">
+            <span><i class="fa-solid fa-angle-left"></i></span>
+            <a href="#" class="title-first level-2">Geri</a>
+          </div>
+          <div class="vacancy_form_title">
+            <h3 class="vacancy_form_name faq-main-title">
+              Tez-tez verilən suallar
+            </h3>
+            <p class="vacancy_form_text">
+              Tez-tez verilən suallara burada cavab tapa bilərsiniz. Əlavə
+              suallarınız olarsa, əlaqə bölməsindən bizimlə əlaqə saxlaya
+              bilərsiniz.
+            </p>
+          </div>
 
-                <div class="faqs-blog faq-card">
-                    <div class="faq-item">
-                        <button class="faq-q" type="button">
-                            1. Xidmətlərə qoşulmaq üçün hara müraciət etmək lazımdır?
-                            <span class="faq-icon"></span>
-                        </button>
-                        <div class="faq-a">
-                            <div class="faq-a-inner">
-                                <p>Mobil cihazların qeydiyyatı üçün
-                                    dövlət rüsumu ilə bağlı məlumatlarıVahid Elektron Xidmətlər Portalına daxil
-                                    olaraq Mobil Cihazların Qeydiyyat Tarifləri bölməsindən əldə etmək
-                                    mümkündür.</p>
-                                <p>QEYD: “Dövlət rüsumu haqqında”
-                                    Azərbaycan Respublikası Qanununun 33-5-ci maddəsinə əsasən, mobil cihazların
-                                    qeydiyyata alınmasına görə dövlət rüsumunun məbləği mobil cihazların bazar qiymətinə
-                                    uyğun olaraq müəyyən edilir. Markası, modeli, habelə bazar qiyməti müəyyən olunmayan
-                                    mobil cihazların qeydiyyata alınmasına görə 20 manat dövlət rüsumu ödənilir.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-q" type="button">
-                            2.GPON(Fiber optik) internetə hansı şərtlərlə qoşulmaq mümkündür?
-                            <span class="faq-icon"></span>
-                        </button>
-                        <div class="faq-a">
-                            <div class="faq-a-inner">
-                                <p>SİMA yeni nəsil rəqəmsal
-                                    imza bulud texnologiyalarına əsaslanan, üztanıma və açıq açar
-                                    texnologiyasını özündə birləşdirən bir həldir. Vətəndaşlar üçün tamamilə ödənişsiz
-                                    olan SİMA dövlət qurumları və özəl şirkətlərin maliyyə, sığorta və digər sahələrdə
-                                    təqdim etdiyi elektron xidmətlərindən istifadə olunduqda tətbiq edilə
-                                    bilər.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-q" type="button">
-                            3. Internet və telefon xidmətinə qoşulmaq üçün hansı sənədlər tələb olunur?
-                            <span class="faq-icon"></span>
-                        </button>
-                        <div class="faq-a">
-                            <div class="faq-a-inner">
-                                <p>
-                                    “Poçt haqqında” Azərbaycan Respublikasının Qanununa əsasən Azərbaycan
-                                    Respublikası ərazisində poçt rabitəsi sahəsini idarə edən və dövlət nəzarətini
-                                    həyata keçirən müvafiq icra hakimiyyəti orqanı Azərbaycan Respublikasının
-                                    Rəqəmsal İnkişaf və Nəqliyyat Nazirliyidir</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-q" type="button">
-                            4.Xidmətlərə qoşulmaq üçün hara müraciət etmək lazımdır?
-                            <span class="faq-icon"></span>
-                        </button>
-                        <div class="faq-a">
-                            <div class="faq-a-inner">
-                                <p>Telefon və internet xidmətinə
-                                    qoşulmaq üçün veb-sayt üzərindən onlayn, 209 Çağrı Mərkəzi ilə və ya yaşadığınız
-                                    bölgədə "Naxçıvan Poçt və Telekommunikasiya Mərkəzi MMC" -nin Telekommunikasiya
-                                    Qovşağına müraciət edə bilərsiniz.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
+          <div class="faqs-blog faq-card">
+            <div class="faq-item">
+              <button class="faq-q" type="button">
+                1. Xidmətlərə qoşulmaq üçün hara müraciət etmək lazımdır?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    Mobil cihazların qeydiyyatı üçün dövlət rüsumu ilə bağlı
+                    məlumatlarıVahid Elektron Xidmətlər Portalına daxil olaraq
+                    Mobil Cihazların Qeydiyyat Tarifləri bölməsindən əldə etmək
+                    mümkündür.
+                  </p>
+                  <p>
+                    QEYD: “Dövlət rüsumu haqqında” Azərbaycan Respublikası
+                    Qanununun 33-5-ci maddəsinə əsasən, mobil cihazların
+                    qeydiyyata alınmasına görə dövlət rüsumunun məbləği mobil
+                    cihazların bazar qiymətinə uyğun olaraq müəyyən edilir.
+                    Markası, modeli, habelə bazar qiyməti müəyyən olunmayan
+                    mobil cihazların qeydiyyata alınmasına görə 20 manat dövlət
+                    rüsumu ödənilir.
+                  </p>
                 </div>
+              </div>
             </div>
-        </section>
+            <div class="faq-item">
+              <button class="faq-q" type="button">
+                2.GPON(Fiber optik) internetə hansı şərtlərlə qoşulmaq
+                mümkündür?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    SİMA yeni nəsil rəqəmsal imza bulud texnologiyalarına
+                    əsaslanan, üztanıma və açıq açar texnologiyasını özündə
+                    birləşdirən bir həldir. Vətəndaşlar üçün tamamilə ödənişsiz
+                    olan SİMA dövlət qurumları və özəl şirkətlərin maliyyə,
+                    sığorta və digər sahələrdə təqdim etdiyi elektron
+                    xidmətlərindən istifadə olunduqda tətbiq edilə bilər.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" type="button">
+                3. Internet və telefon xidmətinə qoşulmaq üçün hansı sənədlər
+                tələb olunur?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    “Poçt haqqında” Azərbaycan Respublikasının Qanununa əsasən
+                    Azərbaycan Respublikası ərazisində poçt rabitəsi sahəsini
+                    idarə edən və dövlət nəzarətini həyata keçirən müvafiq icra
+                    hakimiyyəti orqanı Azərbaycan Respublikasının Rəqəmsal
+                    İnkişaf və Nəqliyyat Nazirliyidir
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" type="button">
+                4.Xidmətlərə qoşulmaq üçün hara müraciət etmək lazımdır?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-a">
+                <div class="faq-a-inner">
+                  <p>
+                    Telefon və internet xidmətinə qoşulmaq üçün veb-sayt
+                    üzərindən onlayn, 209 Çağrı Mərkəzi ilə və ya yaşadığınız
+                    bölgədə "Naxçıvan Poçt və Telekommunikasiya Mərkəzi MMC"
+                    -nin Telekommunikasiya Qovşağına müraciət edə bilərsiniz.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-
     <footer>
-        <div class="container">
-            <h2 class="footer-name">Naxçıvan Poçt və Telekommunikasiya Mərkəzi MMC</h2>
+      <div class="container">
+        <h2 class="footer-name">
+          Naxçıvan Poçt və Telekommunikasiya Mərkəzi MMC
+        </h2>
 
-            <div class="footer-button">
-                <div class="footer-btn-left">
-                    <a href="./tarrifs.html" class="footer-btn-nav">Tariflər</a>
-                    <a href="./campaigns.html" class="footer-btn-nav">Kampaniyalar</a>
-                    <a href="./contact.htm" class="footer-btn-nav">Dəstək</a>
-                </div>
-                <div class="footer-btn-right">
-                    <p>
-                        Bizi sosial şəbəkələrdə izləyin!
-
-                    </p>
-                    <ul class="footer-social-ul">
-                        <li>
-                            <a href="">
-                                <img src="./src/img/footer_instagram.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./src/img/footer_facebook.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="footer-contact">
-                <div class="footer-nav">
-                    <ul>
-                        <li>
-                            <a href="">Vakansiya</a>
-                        </li>
-                        <li>
-                            <a href="./news.html">Xəbərlər</a>
-                        </li>
-                        <li>
-                            <a href="">Media</a>
-                        </li>
-                        <li>
-                            <a href="">FAQ</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="footer-address">
-                    <div class="footer-location">
-                        <img src="./src/img/location_on.png" alt="">
-                        <p class="footer_phone_number">
-                            Naxçıvan şəhəri, Atatürk küçəsi 1
-                        </p>
-                    </div>
-                    <div class="footer-location">
-                        <img src="./src/img/phone_call.png" alt="">
-                        <div class="footer_phone_call">
-                            <a href="" tel="" class="footer_phone_number">
-                                (+994 36) 544 02 01
-                            </a>
-                            <a href="" tel="" class="footer_phone_number">
-                                (+994 36) 544 02 02
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="call_center">
-                    <div class="footer-location">
-
-                        <p class="footer_phone_number">
-                            Çağrı mərkəzi
-                        </p>
-                        <a href="tel:*209" class="call_center_number">
-                            <img src="./src/img/call_center.png" alt="">
-                            <span>*209</span>
-                        </a>
-
-                    </div>
-                    <div class="footer-location">
-
-                        <p class="footer_phone_number">
-                            Bizə yaz!
-                        </p>
-                        <a href="mailto:office@ntelekom.gov.az" class="call_center_number">
-                            <span>office@ntelekom.gov.az</span>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-copyright">
-                <p class="copyright-text">
-                    Bütün hüquqlar qorunur © 2026 
-                </p>
-
-                <div class="copyright-company">
-                    Sayt  <a href="" class="copyright-link">
-                        Naxçıvan Poçt və Telekommunikasiya Mərkəzi MMC 
-                    </a>tərəfindən hazırlanmışdır
-                </div>
-
-            </div>
-
+        <div class="footer-button">
+          <div class="footer-btn-left">
+            <a href="./tarrifs.html" class="footer-btn-nav">Tariflər</a>
+            <a href="./campaigns.html" class="footer-btn-nav">Kampaniyalar</a>
+            <a href="./contact.htm" class="footer-btn-nav">Dəstək</a>
+          </div>
+          <div class="footer-btn-right">
+            <p>Bizi sosial şəbəkələrdə izləyin!</p>
+            <ul class="footer-social-ul">
+              <li>
+                <a href="">
+                  <img src="./src/img/footer_instagram.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./src/img/footer_facebook.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div class="footer-contact">
+          <div class="footer-nav">
+            <ul>
+              <li>
+                <a href="">Vakansiya</a>
+              </li>
+              <li>
+                <a href="./news.html">Xəbərlər</a>
+              </li>
+              <li>
+                <a href="">Media</a>
+              </li>
+              <li>
+                <a href="">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-address">
+            <div class="footer-location">
+              <img src="./src/img/location_on.png" alt="" />
+              <p class="footer_phone_number">
+                Naxçıvan şəhəri, Atatürk küçəsi 1
+              </p>
+            </div>
+            <div class="footer-location">
+              <img src="./src/img/phone_call.png" alt="" />
+              <div class="footer_phone_call">
+                <a href="" tel="" class="footer_phone_number">
+                  (+994 36) 544 02 01
+                </a>
+                <a href="" tel="" class="footer_phone_number">
+                  (+994 36) 544 02 02
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="call_center">
+            <div class="footer-location">
+              <p class="footer_phone_number">Çağrı mərkəzi</p>
+              <a href="tel:*209" class="call_center_number">
+                <img src="./src/img/call_center.png" alt="" />
+                <span>*209</span>
+              </a>
+            </div>
+            <div class="footer-location">
+              <p class="footer_phone_number">Bizə yaz!</p>
+              <a
+                href="mailto:office@ntelekom.gov.az"
+                class="call_center_number"
+              >
+                <span>office@ntelekom.gov.az</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <p class="copyright-text">Bütün hüquqlar qorunur © 2026 </p>
+
+          <div class="copyright-company">
+            Sayt 
+            <a href="" class="copyright-link">
+              Naxçıvan Poçt və Telekommunikasiya Mərkəzi MMC  </a
+            >tərəfindən hazırlanmışdır
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Whelp Widget Code -->
     <script src="https://widget.whelp.co/app.js"></script>
     <script type="text/javascript">
-        Whelp("init", {
-            app_id: "c3b5c6fedc73dcee3976ddfa86a25867"
-        });
+      Whelp("init", {
+        app_id: "c3b5c6fedc73dcee3976ddfa86a25867",
+      });
     </script>
     <!-- Whelp Widget Code -->
     <script src="./src/js/jquery.min.js"></script>
@@ -622,7 +635,5 @@
     <script src="./src/js/owl.carousel.min.js"></script>
     <script src="./src/js/faq.js"></script>
     <script src="./src/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
