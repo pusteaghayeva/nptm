@@ -37,6 +37,65 @@ function setHeaderOffset() {
   }
 }
 
+(function () {
+  function initDropdownBorder(dropdownItem) {
+    const menu = dropdownItem.querySelector('.dropdown-menu');
+    const path = menu ? menu.querySelector('.dd-border-path') : null;
+    if (!menu || !path) return;
+
+    let animating = false;
+
+  function drawBorder() {
+  if (animating) return;
+  animating = true;
+
+  const w = menu.offsetWidth;
+  const h = menu.offsetHeight;
+  const r = 4;
+  const d = [
+    `M ${r} 1`,
+    `L ${w - r} 1`,
+    `Q ${w - 1} 1 ${w - 1} ${r}`,
+    `L ${w - 1} ${h - r}`,
+    `Q ${w - 1} ${h - 1} ${w - r} ${h - 1}`,
+    `L ${r} ${h - 1}`,
+    `Q 1 ${h - 1} 1 ${h - r}`,
+    `L 1 ${r}`,
+    `Q 1 1 ${r} 1`,
+  ].join(' ');
+
+  path.setAttribute('d', d);
+  const len = path.getTotalLength();
+
+  path.style.transition = 'none';
+  path.style.strokeDasharray = len;
+  path.style.strokeDashoffset = len;
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      path.style.transition = 'stroke-dashoffset 2.5s cubic-bezier(0.2, 0, 0.1, 1)';
+      path.style.strokeDashoffset = '0';
+    });
+  });
+}
+
+    function resetBorder() {
+      animating = false;
+      path.style.transition = 'none';
+      const len = path.getTotalLength ? path.getTotalLength() : 9999;
+      path.style.strokeDashoffset = len;
+    }
+
+    dropdownItem.addEventListener('mouseenter', function () {
+      setTimeout(drawBorder, 20);
+    });
+
+    dropdownItem.addEventListener('mouseleave', resetBorder);
+  }
+
+  document.querySelectorAll('.navbar-nav .nav-item.dropdown').forEach(initDropdownBorder);
+})();
+
 setHeaderOffset();
 window.addEventListener('resize', setHeaderOffset);
 function initTariffCarousel($el) {
@@ -311,3 +370,41 @@ $('.news-carousel').owlCarousel({
   }
   draw();
 })();
+
+// asssss
+(function () {
+  [
+    ['sc1', 'sp1'],
+    ['sc2', 'sp2'],
+    ['sc3', 'sp3'],
+  ].forEach(function ([cardId, pathId]) {
+    const card = document.getElementById(cardId);
+    const path = document.getElementById(pathId);
+    if (!card || !path) return;
+
+    function update() {
+      const w = card.offsetWidth;
+      const h = card.offsetHeight;
+      const r = 8;
+      const d = [
+        `M ${r} 1`,
+        `L ${w - r} 1`,
+        `Q ${w - 1} 1 ${w - 1} ${r}`,
+        `L ${w - 1} ${h - r}`,
+        `Q ${w - 1} ${h - 1} ${w - r} ${h - 1}`,
+        `L ${r} ${h - 1}`,
+        `Q 1 ${h - 1} 1 ${h - r}`,
+        `L 1 ${r}`,
+        `Q 1 1 ${r} 1`,
+      ].join(' ');
+      path.setAttribute('d', d);
+      const len = path.getTotalLength();
+      path.style.strokeDasharray = len;
+      path.style.strokeDashoffset = len;
+    }
+
+    update();
+    window.addEventListener('resize', update);
+  });
+})();
+
