@@ -10,7 +10,7 @@ body {
   width: 100%;
   position: relative;
   font-family: var(--fontInter);
-  background-color: linear-gradient(
+  background: linear-gradient(
     180deg,
     #fff 0,
     #fff 430px,
