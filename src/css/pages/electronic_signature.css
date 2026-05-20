@@ -1,15 +1,7 @@
 .electronic_signature-section {
   margin: 60px 0;
 }
-.ethical_behavior_section.electronic_signature{
-    background: linear-gradient(
-    180deg,
-    #fff 0,
-    #fff 430px,
-    #f1f5f8 430px,
-    #f1f5f8 100%
-  );
-}
+
 .electronic_signature_title {
   font-size: 28px;
   font-weight: 700;

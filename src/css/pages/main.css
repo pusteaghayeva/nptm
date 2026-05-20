@@ -185,13 +185,7 @@ a {
 
 body {
   position: relative;
-    background: linear-gradient(
-    180deg,
-    #fff 0,
-    #fff 430px,
-    #f1f5f8 430px,
-    #f1f5f8 100%
-  );
+    background: var(--bodyBg);
 }
 
 .first-section {
@@ -569,8 +563,9 @@ body {
 }
 
 .btn-calculate:hover {
-  background: var(--mainColor);
-  color: var(--whiteColor);
+  background: var(--carouselIndicatorsBg);
+  border: 1px solid var(--mainColor);
+  color: var(--mainColor);
 }
 
 #inp-payment::placeholder,

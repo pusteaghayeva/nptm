@@ -23,12 +23,10 @@
     <canvas
       id="nptm-net"
       style="
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
-        z-index: -1;
         pointer-events: none;
       "
     ></canvas>
@@ -577,17 +575,22 @@
 </section>
     </main>
 
-  <footer>
+    <footer>
       <div class="container">
         <div class="footer-button">
-          <h2 class="footer-name">
-            Naxçıvan Poçt və Telekommunikasiya Mərkəzi MMC
-          </h2>
-          <!-- <div class="footer-btn-left">
-            <a href="./tarrifs.html" class="footer-btn-nav">Tariflər</a>
-            <a href="./campaigns.html" class="footer-btn-nav">Kampaniyalar</a>
-            <a href="./contact.htm" class="footer-btn-nav">Dəstək</a>
-          </div> -->
+          <div class="footer-logo">
+            <img
+              src="./src/img/logo_nptm.png"
+              alt="logo"
+              class="footer-logo-img"
+            />
+            <img
+              src="./src/img/logo_name_az.png"
+              alt="logo"
+              class="footer-logo-name"
+            />
+          </div>
+
           <div class="footer-btn-right">
             <p>Bizi sosial şəbəkələrdə izləyin!</p>
             <ul class="footer-social-ul">
@@ -635,8 +638,8 @@
           </div>
 
           <div class="footer-address">
-            <div class="footer-location">
-              <img src="./src/img/phone_call.png" alt="" />
+            <div class="footer-location footer-location2">
+              <img src="./src/img/phone_call.png" alt="call-img" />
               <div class="footer_phone_call">
                 <a href="" tel="" class="footer_phone_number">
                   Çağrı mərkəzi: *209
@@ -665,14 +668,10 @@
         </div>
 
         <div class="footer-copyright">
+          <a href="" class="copyright-company">
+            <img src="./src/img/logo_rinn_az.png" alt="logo" />
+          </a>
           <p class="copyright-text">Bütün hüquqlar qorunur © 2026 </p>
-
-          <!-- <div class="copyright-company">
-            Sayt 
-            <a href="" class="copyright-link">
-              Naxçıvan Poçt və Telekommunikasiya Mərkəzi MMC  </a
-            >tərəfindən hazırlanmışdır
-          </div> -->
         </div>
       </div>
     </footer>
