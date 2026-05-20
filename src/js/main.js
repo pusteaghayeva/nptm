@@ -523,3 +523,24 @@ $('.news-carousel').owlCarousel({
   });
 })();
 
+// nss
+document.querySelectorAll('.basic-blog .item').forEach(item => {
+  const btn = item.querySelector('.connect-btn');
+  if (!btn) return;
+
+  item.addEventListener('mouseenter', () => {
+    btn.style.background = 'transparent';
+    btn.style.color = 'var(--mainColor)';
+    btn.style.borderColor = 'var(--mainColor)';
+    btn.style.transform = 'scale(1.04)';
+    btn.style.boxShadow = '0 4px 14px rgba(34,68,156,0.2)';
+  });
+
+  item.addEventListener('mouseleave', () => {
+    btn.style.background = 'var(--mainColor)';
+    btn.style.color = 'var(--dropdownBg)';
+    btn.style.borderColor = 'transparent';
+    btn.style.transform = 'scale(1)';
+    btn.style.boxShadow = 'none';
+  });
+});
