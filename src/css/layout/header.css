@@ -52,13 +52,13 @@ header {
 }
 
 .logo-img {
-  width: 90px;
+  width: 80px;
   object-fit: contain;
   flex-shrink: 0;
 }
 
 .logo_name {
-  width: 160px;
+  width: 150px;
 }
 
 .logo-name {
@@ -103,16 +103,17 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  height: 40px;
+  height: 36px;
   padding: 8px;
   background: var(--privateOficceBg);
   color: var(--whiteColor);
   border-radius: 8px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   flex-shrink: 0;
   transition: all 0.2s ease;
+  margin-left: 20px;
 }
 
 .user-img {
@@ -706,11 +707,8 @@ body.search-open header {
     height: 50px;
   }
 
-  .logo-name {
-    font-size: 15px;
-    line-height: 1.2;
-    max-width: 240px;
-    white-space: normal;
+  .logo_name {
+    display: none !important;
   }
 
   .header-right-zone {
@@ -1043,6 +1041,14 @@ body.search-open header {
   }
 }
 @media (max-width: 567px) {
+  .header-bottom-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
   .header-inner {
     padding: 14px 12px;
     gap: 8px;
